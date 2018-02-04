@@ -17,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/getinsomnia/website.git"
+    "url": "git@gitlab.com:tripleorange/redcell.git"
   },
-  "homepage": "https://github.com/getinsomnia/website#readme",
+  "homepage": "https://redcell.ai",
   "devDependencies": {
     "babel": "6.3.13",
     "babel-core": "6.1.18",
