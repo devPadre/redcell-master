@@ -1,0 +1,10 @@
+
+.idea
+_speedpack
+_hugo
+
+node_modules
+.npm-debug.log
+
+.DS_Store
+site/static/javascript/build/*
