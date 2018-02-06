@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Announcement on Redcell Talent Accelerator</title>
+        <link>https://redcell-191816.firebaseapp.com/tags/announcement/</link>
+        <description>Recent content in Announcement on
+            Redcell Talent Accelerator
+        </description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Redcell, Pittsburgh, PA</copyright>
+        <lastBuildDate>
+            Tue, 28 Nov 2017 00:00:00 +0000
+        </lastBuildDate>
+        <atom:link href="/tags/announcement/" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>Official Ubuntu PPA</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/ubuntu-ppa/</link>
+            <pubDate>
+                Tue, 28 Nov 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/ubuntu-ppa/</guid>
+            <description>
+                
+&lt;p&gt;Starting with version 5.12.3, Insomnia can now be installed through an
+official PPA on Ubuntu-based operating systems. Follow these
+&lt;a href=&#34;https://support.insomnia.rest/article/23-installation#ubuntu&#34;&gt;simple instructions&lt;/a&gt; to add
+the repository and install the app.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add to sources
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;deb https://dl.bintray.com/getinsomnia/Insomnia /&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo tee -a /etc/apt/sources.list.d/insomnia.list
+
+&lt;span class=&#34;c1&#34;&gt;# Add public key used to verify code signature
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo apt-key add -
+
+&lt;span class=&#34;c1&#34;&gt;# Refresh repository sources and install Insomnia
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get install insomnia&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vubuntu-ppa&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>New Documentation Website</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/new-documentation-website/</link>
+            <pubDate>
+                Mon, 13 Nov 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/new-documentation-website/</guid>
+            <description>
+                
+&lt;p&gt;I&amp;rsquo;m happy to announce that there is a brand new
+&lt;a href=&#34;https://support.insomnia.rest&#34;&gt;Documentation Website&lt;/a&gt; for Insomnia!
+The new site is built using &lt;a href=&#34;http://helpscout.com/&#34;&gt;HelpScout&lt;/a&gt; Knowledge Base, which was
+chosen for two reasons. (1) Insomnia was already using HelpScout to manage support email,
+and (2) it solved three of the major shortcomings of the old documentation site with no extra
+development effort.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lower-maintenance-friction&#34;&gt;Lower Maintenance Friction 📝&lt;/h2&gt;
+
+&lt;p&gt;Creating and updating help docs on the old system was not easy. It required
+creating or editing markdown files in a text editor, syncing changes with Git, and deploying
+a new release. This meant simple things like fixing a typo could take upwards of ten minutes.
+And don&amp;rsquo;t even get me started on how hard it was to add screenshot images.&lt;/p&gt;
+
+&lt;p&gt;With the new system, all editing is done online. This makes creating, organizing, and managing
+help articles a breeze and should dramatically increase the quality of documentation in the
+future. Also, uploading screenshots is as simple as dragging or pasting an image into the editor.&lt;/p&gt;
+
+&lt;h2 id=&#34;better-discoverability&#34;&gt;Better Discoverability 🔍&lt;/h2&gt;
+
+&lt;p&gt;HelpScout&amp;rsquo;s Knowledge Base tool is specifically designed for hosting documentation so it
+comes bundled with many features that help improve discoverability. The main one being search.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/docs-search.png&#34; alt=&#34;Documentation Search&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you visit the main &lt;a href=&#34;https://insomnia.rest/&#34;&gt;insomnia.rest&lt;/a&gt; website, you will also notice a
+help &lt;em&gt;beacon&lt;/em&gt; at the bottom-right of every page. This beacon gives the ability to quickly search
+and view help articles and provides the option to send an email if more assistance is required.&lt;/p&gt;
+
+&lt;h2 id=&#34;search-analytics&#34;&gt;Search Analytics 📊&lt;/h2&gt;
+
+&lt;p&gt;With the old documentation site it was possible to tell what the most popular &lt;em&gt;existing&lt;/em&gt;
+articles were, but it was impossible to tell which help articles didn&amp;rsquo;t exist yet that
+should be created. This is where search comes in. Search terms that yield no results can
+effectively be treated as a to-do list for documentation.&lt;/p&gt;
+
+&lt;p&gt;In fact, less than a day after launching the new documentation site, there were
+many failed searches for &lt;em&gt;graphql&lt;/em&gt;. So, I put together an article on
+&lt;a href=&#34;support.insomnia.rest/article/61-graphql&#34;&gt;Using GraphQL&lt;/a&gt; in less than an hour and published it
+that same day!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/docs-analytics.png&#34; alt=&#34;Search Analytics&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;wrap-up&#34;&gt;Wrap-Up&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s been less than a week since the new &lt;a href=&#34;https://support.insomnia.rest&#34;&gt;Documentation Website&lt;/a&gt;
+has been live but it&amp;rsquo;s already having a positive effect. The reduced editing friction has
+already improved the quality of articles and I already have a growing list of new articles
+that need creating.&lt;/p&gt;
+
+&lt;p&gt;I hope you all enjoy the new and improved documentation site and please feel free to reach out
+with any feedback or questions you may have!&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vnew-documentation-website&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>You&#39;re Invited to The Slack Team</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/slack-channel/</link>
+            <pubDate>
+                Thu, 11 May 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/slack-channel/</guid>
+            <description>
+                
+&lt;p&gt;Since the &lt;a href=&#34;https://redcell-191816.firebaseapp.com/blog/open-source-announcement/&#34;&gt;Open Source Announcement&lt;/a&gt; yesterday, many
+people have submitted bugs, asked questions, and proposed features via GitHub issues.
+However, this is not always the most suitable medium for discussion. Now, Thanks
+to a &lt;a href=&#34;https://github.com/getinsomnia/insomnia/issues/188&#34;&gt;suggestion&lt;/a&gt; by &lt;code&gt;ctnordcl&lt;/code&gt;, I&amp;rsquo;ve
+created a public Slack Team that anyone can join.&lt;/p&gt;
+
+&lt;p style=&#34;text-align:center;&#34;&gt;
+&lt;a class=&#34;button&#34; href=&#34;https://chat.insomnia.rest&#34;&gt;Join Insomnia on Slack&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So, head on over, introduce yourself, and join in on the discussion.&lt;/p&gt;
+
+&lt;p&gt;See you there!&lt;/p&gt;
+
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vslack-channel&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Insomnia Is Now Open Source</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/open-source-announcement/</link>
+            <pubDate>
+                Wed, 10 May 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/open-source-announcement/</guid>
+            <description>
+                
+&lt;p&gt;Today, I&amp;rsquo;m happy to announce that the Insomnia desktop app is now open source software
+under the GPLv3 license! The source code is hosted on
+&lt;a href=&#34;https://github.com/getinsomnia/insomnia&#34;&gt;GitHub&lt;/a&gt; for your viewing pleasure.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p style=&#34;text-align:center;padding-bottom:1em;&#34;&gt;
+&lt;a class=&#34;button&#34; href=&#34;https://github.com/getinsomnia/insomnia&#34;&gt;Insomnia on GitHub&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;journey-to-open-source&#34;&gt;Journey to Open Source&lt;/h2&gt;
+
+&lt;p&gt;I launched Insomnia more than two years ago with no expectation that it would grow to
+over 30,000 monthly users. This growth motivated me to leave my job in July of 2016
+and is still the main reason I wake up every morning. Before the transition to full-time,
+I set a goal of &lt;a href=&#34;https://redcell-191816.firebaseapp.com/transparency&#34;&gt;documenting the journey&lt;/a&gt; as transparently as
+possible so that others could benefit from my mistakes and successes.
+Now, ten months later, it&amp;rsquo;s time to fit the open-source piece into the
+transparency puzzle.&lt;/p&gt;
+
+&lt;p&gt;So why not open-source sooner? &lt;strong&gt;Fear&lt;/strong&gt;. Fear of public judgement, fear of being
+told my code sucks, fear of showing how much time I spent on it. Being independent
+leaves you wide open with nothing to hide behind. You &lt;em&gt;are&lt;/em&gt; the product, and the
+product embodies &lt;em&gt;your&lt;/em&gt; personality. If the product is a failure, so are &lt;em&gt;you&lt;/em&gt;. Exposing
+the code that powers the product just adds another dimension to criticise. That&amp;rsquo;s what
+the voices in my head keep repeating, anyway.&lt;/p&gt;
+
+&lt;p&gt;The truth is that the fear I feel is irrational. Life is too short to avoid following your
+dreams and the Internet has a terrible memory anyway. So, here I am, setting my fear aside
+to continue on with the next phase of the journey.&lt;/p&gt;
+
+&lt;p&gt;See you on the other side &amp;#x1f37b;&lt;/p&gt;
+
+&lt;p&gt;~ Gregory&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vopen-source-announcement&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Insomnia 5.0 – The Biggest Release Yet!</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/</link>
+            <pubDate>
+                Wed, 05 Apr 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/</guid>
+            <description>
+                
+&lt;p&gt;&lt;strong&gt;TL;DR – This update brings contextual autocomplete, more authentication types, and
+better debugging!&lt;/strong&gt; &amp;#128079;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s been over a month since the last release but version 5.0 is finally here!
+So, find a chair, take a seat, and brace yourself for what&amp;rsquo;s about to come.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/grjSZjbnxudq0/giphy.gif&#34; alt=&#34;Excited dog sitting&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;rsquo;re prepared, let&amp;rsquo;s dive into the new stuff.&lt;/p&gt;
+
+&lt;h2 id=&#34;autocomplete-everywhere-128640&#34;&gt;Autocomplete, Everywhere &amp;#128640;&lt;/h2&gt;
+
+&lt;p&gt;By far the biggest feature of 5.0 is the introduction of autocomplete. Now, just
+like your favourite code editor, Insomnia will suggest completions for common things
+like variable names, URLs, HTTP headers, and template tags.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&#34;Insomnia Autocomplete&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/version-5/autocomplete.gif&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;rendering-errors-and-debugging-128680&#34;&gt;Rendering Errors and Debugging &amp;#128680;&lt;/h2&gt;
+
+&lt;p&gt;The new autocomplete system involved making some core changes to the rendering pipeline so,
+while that was happening, I spent some time improving the user experience around render
+errors.&lt;/p&gt;
+
+&lt;p&gt;The app now displays errors inline &lt;em&gt;before&lt;/em&gt; the request is sent. That&amp;rsquo;s right! No more
+wondering whether or not you typed in your variable name correctly. &amp;#128526;&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&#34;Better error reporting&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/version-5/render-errors.png&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Besides better error reporting, the debug experience is also improved. Insomnia can now
+render previews on hover, and also now provides and interactive variable editor for even
+more control.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&#34;Insomnia Render Error&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/version-5/variable-error.gif&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;new-libcurl-network-backend-and-timeline-127959&#34;&gt;New &lt;code&gt;libcurl&lt;/code&gt; Network Backend and Timeline &amp;#127959;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://curl.haxx.se/&#34;&gt;Curl&lt;/a&gt; is one of the most popular and feature-rich HTTP clients in
+the world and its command-line interface is often used for debugging and testing of APIs –
+making it a perfect fit for powering Insomnia&amp;rsquo;s network stack.&lt;/p&gt;
+
+&lt;p&gt;Every network request made through Insomnia will now be sent using the &lt;code&gt;libcurl&lt;/code&gt; C API.
+Using Curl not only improves Insomnia&amp;rsquo;s reliability, but it also makes it possible to
+implement more advanced features like network throttling and download progress in the future
+(coming soon).&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;code&gt;libcurl&lt;/code&gt;, there is a new &lt;em&gt;Timeline&lt;/em&gt; view that shows a debug log similar to the
+output when using Curl&amp;rsquo;s &lt;code&gt;--verbose&lt;/code&gt; flag. This is extremely valuable for debugging
+network problems when it&amp;rsquo;s not clear exactly what&amp;rsquo;s going wrong.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&#34;Timeline Debugging View&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/version-5/curl.png&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I would like to give a huge thanks to the maintainer of
+&lt;a href=&#34;https://github.com/JCMais/node-libcurl/&#34;&gt;&lt;code&gt;node-libcurl&lt;/code&gt;&lt;/a&gt;. Without this project, integrating
+Curl into Insomnia would have taken a lot more work.&lt;/p&gt;
+
+&lt;h2 id=&#34;oauth-2-0-digest-and-ntlm-authentication-128272&#34;&gt;OAuth 2.0, Digest, and NTLM Authentication &amp;#128272;&lt;/h2&gt;
+
+&lt;p&gt;OAuth 2.0 is an extremely popular authentication mechanism, meaning Insomnia can now
+easily interact with many popular APIs like GitHub, Dropbox, Facebook, and Google. Simply
+fill out a few OAuth 2.0 parameters and Insomnia will take care of user authentication,
+generation of the &lt;code&gt;Authorization&lt;/code&gt; header, and renewing refresh tokens when needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Insomnia supports all four OAuth 2.0 grant types so it should be able to handle anything
+you throw at it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/version-5/dropbox.gif&#34; alt=&#34;Insomnia OAuth 2.0 Demo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Along with OAuth 2.0, Insomnia now supports both
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Digest_access_authentication&#34;&gt;Digest&lt;/a&gt; and
+&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749(v=vs.85).aspx&#34;&gt;NTLM (Windows)&lt;/a&gt;
+authentication.&lt;/p&gt;
+
+&lt;h2 id=&#34;sortable-key-value-editors-9994&#34;&gt;Sortable Key-Value Editors &amp;#9994;&lt;/h2&gt;
+
+&lt;p&gt;If you like dragons, you&amp;rsquo;ll love the new drag-n-drop sorting of Insomnia&amp;rsquo;s key-value fields.
+Satisfy your inner perfectionist and sort your headers, query parameters, and form data whatever
+way you want!&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&#34;Insomnia Autocomplete&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/version-5/sort.gif&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Alright, this one isn&amp;rsquo;t that exciting, but it was so heavily requested that it made sense
+to talk about it in this post.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;so-much-more-127813-127815-127817-127820-127827&#34;&gt;So Much More &amp;#127813;&amp;#127815;&amp;#127817;&amp;#127820;&amp;#127827;&lt;/h2&gt;
+
+&lt;p&gt;There is so much more that didn&amp;rsquo;t make it into this post that I know you&amp;rsquo;ll love.
+If you&amp;rsquo;re curious you can view the full &lt;a href=&#34;https://redcell-191816.firebaseapp.com/changelog/5.0.1/&#34;&gt;release notes&lt;/a&gt;, but here&amp;rsquo;s
+a summary of the most notable ones missed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Environment variables and template tags now highlighted throughout the app&lt;/li&gt;
+&lt;li&gt;Added per-request settings for controlling cookies, rendering, and URL encoding&lt;/li&gt;
+&lt;li&gt;Digest and NTLM authentication now supported in proxy&lt;/li&gt;
+&lt;li&gt;Custom HTTP methods now supported&lt;/li&gt;
+&lt;li&gt;App panes now resizable when in vertical layout&lt;/li&gt;
+&lt;li&gt;Response view types have been reworked to behave more intuitively&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;thanks-for-the-support-127867&#34;&gt;Thanks for the Support! &amp;#127867;&lt;/h2&gt;
+
+&lt;p&gt;Almost all of the changes in version 5 are a direct result of the
+hundreds of email conversations I&amp;rsquo;ve had with users over the past year so &amp;ldquo;&lt;strong&gt;thank you!&lt;/strong&gt;&amp;ldquo;
+and keep them email coming! &amp;#128140;&lt;/p&gt;
+
+&lt;p&gt;Also, if you&amp;rsquo;d like to help support future development and get bonus features like
+cloud sync, check out &lt;a href=&#34;https://redcell-191816.firebaseapp.com/pricing&#34;&gt;Insomnia Plus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;text-lg&#34;&gt;&amp;#127939;&amp;#128168;&lt;/span&gt; Time to get started on the next big thing&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;~ Gregory&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vinsomnia-5-announcement&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Introducing Color Themes!</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/introducing-color-themes/</link>
+            <pubDate>
+                Mon, 23 Jan 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/introducing-color-themes/</guid>
+            <description>
+                
+&lt;p&gt;Superb design has always been treated as a core feature of Insomnia. However, I recently
+noticed that no design-related work had been done on Insomnia in months. Because of this,
+I decided to spend a few days and implement a new design-related feature. Themes!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;There are now &lt;strong&gt;nine themes to choose from&lt;/strong&gt;. Three &lt;em&gt;basic&lt;/em&gt; and
+and six &lt;em&gt;premium&lt;/em&gt;. Basic themes are available to everyone, while premium themes
+are available &lt;a href=&#34;https://redcell-191816.firebaseapp.com/pricing/&#34;&gt;Insomnia Plus&lt;/a&gt; users.&lt;/p&gt;
+
+&lt;h2 id=&#34;basic-themes&#34;&gt;Basic Themes&lt;/h2&gt;
+
+&lt;p&gt;The idea of themes first started as a way to provide better visual accessibility to
+Insomnia users. The following &lt;em&gt;Basic&lt;/em&gt; themes provide a higher-contrast experience for
+users who want or need it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Color Themes&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/themes.png&#34; style=&#34;max-width: 85%&#34;/&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;premium-themes&#34;&gt;Premium Themes&lt;/h2&gt;
+
+&lt;p&gt;The following &lt;em&gt;Premium&lt;/em&gt; themes are available to all &lt;a href=&#34;https://redcell-191816.firebaseapp.com/pricing/&#34;&gt;Insomnia Plus&lt;/a&gt; users. I had
+a lot of fun creating these, and I hope to expand on this collection in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Premium Color Themes&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/premium-themes.png&#34; style=&#34;max-width: 85%&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;For a closer look, here is a larger screenshot of the Material theme (my favourite).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/material-theme.png&#34; alt=&#34;Insomnia Material Design Theme&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope you enjoy the new colors. Let me know if you have any suggestions for more!&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vintroducing-color-themes&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Insomnia 4.0 – Out of Beta at Last!</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/insomnia-4-announcement/</link>
+            <pubDate>
+                Thu, 01 Dec 2016 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/insomnia-4-announcement/</guid>
+            <description>
+                
+&lt;p&gt;&lt;strong&gt;Version 4 brings multipart support, response history, performance, and more!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The number 3 just wasn&amp;rsquo;t big enough to contain all the awesome stuff in this
+release, so it&amp;rsquo;s been bumped to &lt;strong&gt;4.0&lt;/strong&gt;! This version fills in all of the major
+usability gaps that I&amp;rsquo;ve noticed from talking to over 400 users since the initial
+beta launch over four months ago. Keep reading to see what&amp;rsquo;s new.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/t0TNY68t8wq2Y/giphy.gif&#34; alt=&#34;Puppy Surprise&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;multipart-form-data-and-binary-file-support&#34;&gt;Multipart Form Data and Binary File Support&lt;/h2&gt;
+
+&lt;p&gt;The ability to send multipart form data with requests has been the
+most requested feature since launch (by far). You can now
+change the body type to &lt;code&gt;Form Data&lt;/code&gt; or to start using it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Multipart Form Data&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/multipart.png&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also now send raw files with requests. This can be useful for images
+and attachments, but it&amp;rsquo;s also helpful for sending large JSON or XML bodies
+instead of pasting them into the body editor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Binary Files&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/binaryfile.png&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;history-viewer&#34;&gt;History Viewer&lt;/h2&gt;
+
+&lt;p&gt;Every request now keeps track of it&amp;rsquo;s past responses so you can go back later and
+see exactly what happened.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Response History&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/history.png&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;client-certificates&#34;&gt;Client Certificates&lt;/h2&gt;
+
+&lt;p&gt;Client certificates can now be used to authenticate requests. Import your own &lt;code&gt;PFX&lt;/code&gt;,
+&lt;code&gt;PKCS12&lt;/code&gt;, or &lt;code&gt;PEM&lt;/code&gt; certificates into the workspace settings screen and Insomnia
+will automatically send these for the specified host.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/certificates.png&#34; alt=&#34;Insomnia Client Certificates&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;more-import-formats&#34;&gt;More Import Formats&lt;/h2&gt;
+
+&lt;p&gt;Getting data into Insomnia has been a pain point for a lot of users, and has
+prevented some from from even trying the app.&lt;/p&gt;
+
+&lt;p&gt;To help alleviate this pain, Insomnia 4 now supports &lt;strong&gt;Postman (v2)&lt;/strong&gt;, &lt;strong&gt;HTTP Archive (HAR)&lt;/strong&gt;,
+and &lt;strong&gt;Curl command&lt;/strong&gt; import formats. And, if your format still isn&amp;rsquo;t supported, you can help add your own
+importer by contributing to the
+&lt;a href=&#34;https://github.com/getinsomnia/importers&#34;&gt;importers project on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;HAR support means that you can now &lt;strong&gt;export requests from the Chrome developer tools&lt;/strong&gt; right
+into Insomnia.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia HAR Export&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/har.png&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;advanced-sending-options&#34;&gt;Advanced Sending Options&lt;/h2&gt;
+
+&lt;p&gt;Holding down &lt;code&gt;Ctrl&lt;/code&gt; (&lt;code&gt;Cmd&lt;/code&gt; on Mac), will now reveal extra sending options, including
+the ability to send a request after a delay or on a set interval.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Advanced Sending&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/advanced-send.png&#34; class=&#34;small&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toggleable-everything&#34;&gt;Toggleable Everything!&lt;/h2&gt;
+
+&lt;p&gt;Query parameters, headers, form data, authentication, and client certificates can now
+be toggled on or off. &lt;em&gt;Toggling something off will behave the same as if it was deleted
+entirely&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;performance-improvements&#34;&gt;Performance Improvements&lt;/h2&gt;
+
+&lt;p&gt;This release includes performance improvements to the interface. Everything you do in
+the app should now be noticeably faster, especially if you have a lot of requests. Enjoy!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/h41bl4ZNk276w/giphy.gif&#34; alt=&#34;F-Zero&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;thanks-for-the-support&#34;&gt;Thanks for The Support!&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve said it before, but I&amp;rsquo;ll say it again. It&amp;rsquo;s been amazing to be able to interact
+with so many of you, and I hope we can keep this going. Each conversation
+provides more context to help make Insomnia a better tool for everyone, so thanks!&lt;/p&gt;
+
+&lt;p&gt;~ Gregory&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vinsomnia-4-announcement&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Introducing Insomnia Plus</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/introducing-insomnia-plus/</link>
+            <pubDate>
+                Tue, 15 Nov 2016 13:30:50 -0700
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/introducing-insomnia-plus/</guid>
+            <description>
+                
+&lt;p&gt;Today, I&amp;rsquo;m proud to introduce Insomnia Plus – the first paid addition to Insomnia
+that syncs data seamlessly across all of your devices. Insomnia Plus also acts as
+a secure backup, so you can &lt;em&gt;rest&lt;/em&gt; assured that you will never accidentally
+lose your work!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif&#34; alt=&#34;Minions Celebrating&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With Plus, simply sign into your account and your data will be there. It
+just works. However, there a lot happening behind the scenes, such as
+&lt;strong&gt;end-to-end data encryption&lt;/strong&gt;, &lt;strong&gt;smart conflict resolution&lt;/strong&gt;, and robust &lt;strong&gt;offline
+support&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p style=&#34;text-align:center&#34;&gt;
+&lt;a class=&#34;button&#34; href=&#34;https://redcell-191816.firebaseapp.com/plus&#34;&gt;Upgrade to Insomnia Plus&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;always-backed-up-and-in-sync&#34;&gt;Always Backed up and in Sync&lt;/h2&gt;
+
+&lt;p&gt;We all know how important it is to keep frequent backups of our data. Hard drive
+failures and crashes happen all the time. Now, you have one less thing to worry
+about.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/sync-menu.png&#34;
+    style=&#34;max-height:230px&#34; 
+    alt=&#34;Insomnia Plus Sync Menu&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Once signed in to Plus, data is automatically synced whenever a change is
+detected. And, if you are signed in to multiple devices, these changes
+will automatically be pulled down and merged within seconds. Furthermore,
+this all happens in an encrypted and secure manner.&lt;/p&gt;
+
+&lt;h2 id=&#34;secure-and-private-by-default&#34;&gt;Secure and Private by Default&lt;/h2&gt;
+
+&lt;p&gt;Before any data is synced to Insomnia&amp;rsquo;s servers, it is first &lt;strong&gt;encrypted locally&lt;/strong&gt; using a
+key generated on your device. This means that any sensitive information you
+enter into the app (API keys, passwords, etc) will be kept private. &lt;strong&gt;Not even the Insomnia
+servers have the ability to read your data.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Check out the &lt;a href=&#34;https://redcell-191816.firebaseapp.com/documentation/security&#34;&gt;Security Overview&lt;/a&gt; to find more
+on the Insomnia Plus architecture.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/N6sPcUBbayGoo/giphy.gif&#34; alt=&#34;Raccoon Stealing Carpet&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;final-words&#34;&gt;Final Words&lt;/h2&gt;
+
+&lt;p&gt;Building the initial iteration of sync was a major effort, but it&amp;rsquo;s just the first
+step. Now, with a stable and secure foundation to build on, expect to see more advanced
+features like &lt;strong&gt;team collaboration&lt;/strong&gt; and &lt;strong&gt;versioning&lt;/strong&gt; in the near future.&lt;/p&gt;
+
+&lt;p&gt;If you decide to sign up for Plus, I&amp;rsquo;d like to say a huge &lt;em&gt;THANK YOU&lt;/em&gt; for helping
+support my continuous effort of making Insomnia awesome! Also, be sure to reach out
+with your thoughts, so we can work together to ensure the product keeps heading
+in the right direction.&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vintroducing-insomnia-plus&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Insomnia Plus Is Now in Beta</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/insomnia-plus-beta/</link>
+            <pubDate>
+                Tue, 25 Oct 2016 12:20:37 -0700
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/insomnia-plus-beta/</guid>
+            <description>
+                
+&lt;p&gt;&lt;em&gt;tl;dr visit the &lt;a href=&#34;https://redcell-191816.firebaseapp.com/documentation/plus&#34;&gt;Insomnia Plus Beta Documentation&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Four months ago
+&lt;a href=&#34;https://schier.co/blog/2016/08/05/forging-a-new-path/&#34;&gt;I left my previous job&lt;/a&gt;
+to work full-time on Insomnia. Since then, I&amp;rsquo;ve had over 300 amazing
+conversations with users have helped identify bugs, given feedback, and
+suggested new features. Insomnia now has over 2000 daily active users across
+the Mac, Windows, and Linux platforms.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;These conversations have not only helped improve stability and usability of the
+app, but have also helped validate and shape the first features of Insomnia
+Plus – a premium add-on for Insomnia that enables powerful features like
+&lt;strong&gt;data sync&lt;/strong&gt; and &lt;strong&gt;collaboration&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;data-sync&#34;&gt;Data Sync&lt;/h2&gt;
+
+&lt;p&gt;Data sync provides the ability to securely sync Insomnia data across multiple
+machines, which also acts as an up-to-date backup of all your data (in case
+something terrible happens).&lt;/p&gt;
+
+&lt;p&gt;While Insomnia is running, the app will actively sync data to and from the
+server whenever changes occur. On top of this, sync is
+&lt;strong&gt;end-to-end encrypted&lt;/strong&gt;, meaning that all data is first encrypted in the
+app before sending it to the server.&lt;/p&gt;
+
+&lt;h3 id=&#34;encryption-overview&#34;&gt;Encryption Overview&lt;/h3&gt;
+
+&lt;p&gt;Data is encrypted with a key that is derived from your account password (which
+is never sent to the server), meaning that Insomnia (or any third party)
+cannot read your data. Privacy is crucial for Insomnia users, because
+requests often contain important API keys, usernames, and passwords.&lt;/p&gt;
+
+&lt;p&gt;In case you&amp;rsquo;re curious, or need more information, there will be a future article
+explaining encryption and security in more detail.&lt;/p&gt;
+
+&lt;h2 id=&#34;team-collaboration&#34;&gt;Team Collaboration&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;NOTE: Team collaboration is not yet available in the beta but is coming
+soon&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Automated sync can be useful for individual users, but the same workflow does
+not translate well to teams.&lt;/p&gt;
+
+&lt;p&gt;Imagine working in a code editor where every line of code you typed was
+immediately synced to all of your coworkers computers, and vice versa. It would
+be chaos! Because of this, Insomnia takes a different approach for teams,
+providing a a manual push/pull model similar to the version control system
+Git.&lt;/p&gt;
+
+&lt;h2 id=&#34;join-the-beta&#34;&gt;Join the Beta!&lt;/h2&gt;
+
+&lt;p&gt;If you would like to help test Insomnia Plus, head over to the
+&lt;a href=&#34;https://redcell-191816.firebaseapp.com/documentation/plus&#34;&gt;Getting Started Documentation&lt;/a&gt; to learn how to enable it.&lt;/p&gt;
+
+&lt;p&gt;As always, please send all feedback my way.&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vinsomnia-plus-beta&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Google to Discontinue Chrome Apps</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/google-discontinuing-chrome-apps/</link>
+            <pubDate>
+                Fri, 19 Aug 2016 22:01:22 -0700
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/google-discontinuing-chrome-apps/</guid>
+            <description>
+                
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t worry!&lt;/strong&gt;
+The Chrome version of Insomnia will be available until 2017, but you should upgrade to the
+&lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34;&gt;standalone version (3.0)&lt;/a&gt; as soon as possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p style=&#34;text-align:center&#34;&gt;
+&lt;a class=&#34;button __download-link&#34; href=&#34;https://redcell-191816.firebaseapp.com/download&#34;&gt;Download Version 3.0 (Standalone)&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Google &lt;a href=&#34;http://blog.chromium.org/2016/08/from-chrome-apps-to-web.html&#34;&gt;announced today&lt;/a&gt; that they
+will be phasing out Chrome Apps by mid-2017. This means that the Chrome version (2.0) of Insomnia
+will become unavailable.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We will be removing support for packaged and hosted apps from Chrome on Windows, Mac, and
+Linux over the next two years.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To make sure that you are unaffected by this change, &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34;&gt;upgrade&lt;/a&gt; to the
+standalone version (3.0) today which is supported on Mac, Windows, and Linux platforms. After
+installation, export your data from 2.0 and import it into 3.0. Then, carry on with your work
+and enjoy the new features like
+&lt;a href=&#34;https://redcell-191816.firebaseapp.com/documentation/cookie-management&#34;&gt;cookie management&lt;/a&gt;,
+&lt;a href=&#34;https://redcell-191816.firebaseapp.com/documentation/environment-variables&#34;&gt;global environments&lt;/a&gt;, and
+&lt;a href=&#34;https://redcell-191816.firebaseapp.com/documentation/code-snippets&#34;&gt;code snippet generation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, email &lt;a href=&#34;mailto:support@insomnia.rest&#34;&gt;support@insomnia.rest&lt;/a&gt; or reach out
+on Twitter &lt;a href=&#34;https://twitter.com/GetInsomnia&#34;&gt;@GetInsomnia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vgoogle-discontinuing-chrome-apps&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+    </channel>
+</rss>

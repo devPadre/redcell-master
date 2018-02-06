@@ -85,57 +85,57 @@ import * as session from './session';
   }
 })();
 
-!function (e, o, n) {
-  window.HSCW = o;
-  window.HS = n;
-  n.beacon = n.beacon || {};
-  const t = n.beacon;
-  t.userConfig = {};
-  t.readyQueue = [];
-  t.config = function (e) {
-    this.userConfig = e
-  };
-  t.ready = function (e) {
-    this.readyQueue.push(e)
-  };
-  o.config = {
-    docs: {enabled: !0, baseUrl: "//insomnia.helpscoutdocs.com/"},
-    contact: {enabled: !0, formId: "a9f6c8aa-b1dd-11e7-b466-0ec85169275a"}
-  };
-  const r = e.getElementsByTagName("script")[0], c = e.createElement("script");
-  c.type = "text/javascript";
-  c.async = !0;
-  c.src = "https://djtflbt20bdde.cloudfront.net/";
-  r.parentNode.insertBefore(c, r);
-}(document, window.HSCW || {}, window.HS || {});
+// !function (e, o, n) {
+//   window.HSCW = o;
+//   window.HS = n;
+//   n.beacon = n.beacon || {};
+//   const t = n.beacon;
+//   t.userConfig = {};
+//   t.readyQueue = [];
+//   t.config = function (e) {
+//     this.userConfig = e
+//   };
+//   t.ready = function (e) {
+//     this.readyQueue.push(e)
+//   };
+//   o.config = {
+//     docs: {enabled: !0, baseUrl: "//redcell.ai/"},
+//     contact: {enabled: !0, formId: "a9f6c8aa-b1dd-11e7-b466-0ec85169275a"}
+//   };
+//   const r = e.getElementsByTagName("script")[0], c = e.createElement("script");
+//   c.type = "text/javascript";
+//   c.async = !0;
+//   c.src = "https://djtflbt20bdde.cloudfront.net/";
+//   r.parentNode.insertBefore(c, r);
+// }(document, window.HSCW || {}, window.HS || {});
 
-HS.beacon.config({
-  color: '#6e60cc',
-  icon: 'search',
-  attachment: true,
-  poweredBy: false,
-  showSubject: true,
-  showContactFields: true,
-  translation: {
-    searchLabel: 'Search the documentation'
-  },
-  topics: [
-    {val: 'app', label: 'Desktop App'},
-    {val: 'bug report', label: 'Bug Report'},
-    {val: 'account', label: 'Plus or Teams Account'},
-    {val: 'question', label: 'Question'},
-    {val: 'plugin', label: 'Plugin Development'},
-    {val: 'other', label: 'Other'},
-  ]
-});
+// HS.beacon.config({
+//   color: '#6e60cc',
+//   icon: 'search',
+//   attachment: true,
+//   poweredBy: false,
+//   showSubject: true,
+//   showContactFields: true,
+//   translation: {
+//     searchLabel: 'Search the documentation'
+//   },
+//   topics: [
+//     {val: 'app', label: 'Desktop App'},
+//     {val: 'bug report', label: 'Bug Report'},
+//     {val: 'account', label: 'Plus or Teams Account'},
+//     {val: 'question', label: 'Question'},
+//     {val: 'plugin', label: 'Plugin Development'},
+//     {val: 'other', label: 'Other'},
+//   ]
+// });
 
-HS.beacon.ready(async () => {
-  const data = await session.whoami();
-  HS.beacon.identify({
-    name: `${data.firstName} ${data.lastName || ''}`.trim(),
-    email: data.email,
-    // Custom
-    'Account ID': data.accountId,
-    'Plan Name': data.planName
-  });
-});
+// HS.beacon.ready(async () => {
+//   const data = await session.whoami();
+//   HS.beacon.identify({
+//     name: `${data.firstName} ${data.lastName || ''}`.trim(),
+//     email: data.email,
+//     // Custom
+//     'Account ID': data.accountId,
+//     'Plan Name': data.planName
+//   });
+// });

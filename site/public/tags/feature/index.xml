@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Feature on Redcell Talent Accelerator</title>
+        <link>https://redcell-191816.firebaseapp.com/tags/feature/</link>
+        <description>Recent content in Feature on
+            Redcell Talent Accelerator
+        </description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Redcell, Pittsburgh, PA</copyright>
+        <lastBuildDate>
+            Wed, 08 Nov 2017 00:00:00 +0000
+        </lastBuildDate>
+        <atom:link href="/tags/feature/" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>OAuth 1.0 Support is Here!</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/introducing-oauth-1.0-support/</link>
+            <pubDate>
+                Wed, 08 Nov 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/introducing-oauth-1.0-support/</guid>
+            <description>
+                
+&lt;p&gt;Starting with &lt;strong&gt;v5.11.0&lt;/strong&gt;, Insomnia users can now authenticate using the
+&lt;a href=&#34;https://tools.ietf.org/html/rfc5849&#34;&gt;OAuth 1.0&lt;/a&gt; authentication framework!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/twitter-oauth.png&#34; alt=&#34;Twitter OAuth 1.0&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;OAuth 1.0 support was an extremely popular request so I&amp;rsquo;m proud to finally announce that
+it&amp;rsquo;s finished. In fact, it was the most popular
+&lt;a href=&#34;https://github.com/getinsomnia/insomnia/issues/197&#34;&gt;issue&lt;/a&gt; on GitHub for a long time. I&amp;rsquo;d
+like to give a huge thanks to &lt;a href=&#34;https://github.com/besolov&#34;&gt;besolov&lt;/a&gt; who stepped up and
+provided then initial implementation, and to &lt;a href=&#34;https://github.com/EpocDotFr&#34;&gt;EpocDotFr&lt;/a&gt; as well
+for doing initial testing.&lt;/p&gt;
+
+&lt;p&gt;Since OAuth is a fairly complicated framework, please report any bugs or issues you run into
+on &lt;a href=&#34;https://github.com/getinsomnia/insomnia/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vintroducing-oauth-1.0-support&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Introducing GraphQL Support!</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/introducing-graphql/</link>
+            <pubDate>
+                Wed, 09 Aug 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/introducing-graphql/</guid>
+            <description>
+                
+&lt;p&gt;Starting in version &lt;a href=&#34;https://redcell-191816.firebaseapp.com/changelog/5.7.0/&#34;&gt;5.7.0&lt;/a&gt;, you can now interact with a
+&lt;a href=&#34;http://graphql.org/&#34;&gt;GraphQL&lt;/a&gt; server just the same as any other HTTP request inside
+Insomnia 🤗!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://redcell-191816.firebaseapp.com/images/blog/graphql.png&#34;&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/graphql.png&#34; alt=&#34;GraphQL Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Along with defining and sending queries, the GraphQL integration also provides the
+following benefits:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Autocomplete for field names, variables, and types
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Schema is fetched automatically by sending an introspection query to the same URL&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Linting with friendly error messages&lt;/li&gt;
+&lt;li&gt;Vertical split view for editing GraphQL variables&lt;/li&gt;
+&lt;li&gt;Integration with all existing Insomnia features
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Special Thanks: 🍻&lt;/strong&gt;&lt;br&gt;
+I&amp;rsquo;d like to give a huge thanks to the brilliant folks responsible for developing the
+&lt;a href=&#34;https://github.com/graphql/codemirror-graphql&#34;&gt;Codemirror GraphQL plugin&lt;/a&gt;, which powers
+linting, error messages, autocomplete, and syntax highlighting. Without it, this feature
+would have taken A LOT more work.&lt;/p&gt;
+
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vintroducing-graphql&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Response Previews for PDFs</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/pdf-previews/</link>
+            <pubDate>
+                Fri, 30 Jun 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/pdf-previews/</guid>
+            <description>
+                
+&lt;p&gt;Insomnia tries to display HTTP responses in the most friendly way possible.
+For example, HTML files are rendered as web pages, images and SVGs are displayed as bitmaps,
+and JSON and XML responses are syntax highlighted and interactive. Now, thanks to a community
+&lt;a href=&#34;https://github.com/getinsomnia/insomnia/pull/325&#34;&gt;contribution by Antoine38660&lt;/a&gt;, Insomnia
+is able to display PDF files using Mozilla&amp;rsquo;s &lt;a href=&#34;https://github.com/mozilla/pdf.js/&#34;&gt;PDF.js&lt;/a&gt;
+project.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/pdf-preview.png&#34; alt=&#34;PDF Preview&#34; /&gt;&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vpdf-previews&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Introducing Unix Domain Socket Support</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/unix-domain-sockets/</link>
+            <pubDate>
+                Tue, 20 Jun 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/unix-domain-sockets/</guid>
+            <description>
+                
+&lt;p&gt;One of the headlining features of &lt;a href=&#34;https://redcell-191816.firebaseapp.com/changelog/5.4.0/&#34;&gt;Insomnia 5.4.0&lt;/a&gt; is support for
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Unix_domain_socket&#34;&gt;UNIX Domain Sockets&lt;/a&gt; – a mechanism
+typically used for communication between processes running on the same host operating
+system. This post gives a brief introduction on connecting to a socket within Insomnia.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;In order for Insomnia to distinguish socket requests, a slightly different
+URL syntax is required. The following syntax was borrowed from the popular NodeJS
+&lt;a href=&#34;https://github.com/request/request#unix-domain-sockets&#34;&gt;&lt;code&gt;request&lt;/code&gt;&lt;/a&gt; library.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Syntax for UNIX domain sockets
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;http://unix:&lt;span class=&#34;nv&#34;&gt;$SOCKET&lt;/span&gt;:&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Note: This feature provides same functionality as using the
+&lt;code&gt;--unix-socket FILE&lt;/code&gt; flag with &lt;code&gt;curl&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;example-using-docker-engine-api&#34;&gt;Example Using Docker Engine API&lt;/h2&gt;
+
+&lt;p&gt;To demonstrate socket support, we&amp;rsquo;ll issue a request to the &lt;code&gt;/images&lt;/code&gt; endpoint that is exposed
+by the &lt;a href=&#34;https://docs.docker.com/engine/api/v1.24/&#34;&gt;Docker Engine&amp;rsquo;s&lt;/a&gt; socket API.
+Using the following URL in Insomnia will list the available Docker images on the host machine.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Sample URL to communicate with Docker socket
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;http://unix:/var/run/docker.sock:/v1.24/images/json&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This URL is specifying the path to the socket (&lt;code&gt;/var/run/docker.sock&lt;/code&gt;) and the API
+endpoint path (&lt;code&gt;/v1.24/images/json&lt;/code&gt;) using the previously mentioned URL syntax. Here&amp;rsquo;s what
+it looks like within Insomnia.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/unix-sockets.png&#34; alt=&#34;Domain Sockets Example&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the Docker socket communicates using HTTP and JSON, it looks indistinguishable from
+regular TCP/IP-based HTTP requests being made over the network.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s it! I can&amp;rsquo;t wait to hear what you think!&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vunix-domain-sockets&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Introducing Color Themes!</title>
+            <link>https://redcell-191816.firebaseapp.com/blog/introducing-color-themes/</link>
+            <pubDate>
+                Mon, 23 Jan 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell-191816.firebaseapp.com/blog/introducing-color-themes/</guid>
+            <description>
+                
+&lt;p&gt;Superb design has always been treated as a core feature of Insomnia. However, I recently
+noticed that no design-related work had been done on Insomnia in months. Because of this,
+I decided to spend a few days and implement a new design-related feature. Themes!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;There are now &lt;strong&gt;nine themes to choose from&lt;/strong&gt;. Three &lt;em&gt;basic&lt;/em&gt; and
+and six &lt;em&gt;premium&lt;/em&gt;. Basic themes are available to everyone, while premium themes
+are available &lt;a href=&#34;https://redcell-191816.firebaseapp.com/pricing/&#34;&gt;Insomnia Plus&lt;/a&gt; users.&lt;/p&gt;
+
+&lt;h2 id=&#34;basic-themes&#34;&gt;Basic Themes&lt;/h2&gt;
+
+&lt;p&gt;The idea of themes first started as a way to provide better visual accessibility to
+Insomnia users. The following &lt;em&gt;Basic&lt;/em&gt; themes provide a higher-contrast experience for
+users who want or need it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Color Themes&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/themes.png&#34; style=&#34;max-width: 85%&#34;/&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;premium-themes&#34;&gt;Premium Themes&lt;/h2&gt;
+
+&lt;p&gt;The following &lt;em&gt;Premium&lt;/em&gt; themes are available to all &lt;a href=&#34;https://redcell-191816.firebaseapp.com/pricing/&#34;&gt;Insomnia Plus&lt;/a&gt; users. I had
+a lot of fun creating these, and I hope to expand on this collection in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Insomnia Premium Color Themes&#34; src=&#34;https://redcell-191816.firebaseapp.com/images/blog/premium-themes.png&#34; style=&#34;max-width: 85%&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;For a closer look, here is a larger screenshot of the Material theme (my favourite).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://redcell-191816.firebaseapp.com/images/blog/material-theme.png&#34; alt=&#34;Insomnia Material Design Theme&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope you enjoy the new colors. Let me know if you have any suggestions for more!&lt;/p&gt;
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://redcell-191816.firebaseapp.com/download&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vintroducing-color-themes&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,20 +1,20 @@
 ---
-baseurl: "https://redcell.ai/"
+baseurl: "https://redcell-191816.firebaseapp.com/"
 languageCode: "en-us"
 copyright: "Redcell, Pittsburgh, PA"
 title: "Redcell Talent Accelerator"
 theme: "hugo-insomnia-theme"
-publishdir: "_hugo"
+publishdir: "public"
 disqusShortname: "redcell-talent"
-googleAnalytics: "UA-9837747-12"
+googleAnalytics: "UA-113582687-1"
 permalinks:
   blog: /blog/:slug
 menu:
   main:
-    - Name: "Docs"
-      Identifier: "docs"
-      URL: "https://support.redcell.ai"
-      Weight: 1
+    # - Name: "Docs"
+    #   Identifier: "docs"
+    #   URL: "https://redcell.ai"
+    #   Weight: 1
     # - Name: "Pricing"
     #   Identifier: "pricing"
     #   URL: "/pricing/"
@@ -33,15 +33,15 @@ menu:
     #   Pre: "button"
     #   URL: "/app/account/"
     #   Weight: 5
-    # - Name: "Sign Up"
-    #   Identifier: "signup"
-    #   Pre: "button"
-    #   URL: "/app/signup/"
-    #   Weight: 99
-    # - Name: "Download"
-    #   Identifier: "download"
-    #   URL: "/download/"
-    #   Weight: 100
+    - Name: "Sign Up"
+      Identifier: "signup"
+      Pre: "button"
+      URL: "/app/signup/"
+      Weight: 99
+    - Name: "Download"
+      Identifier: "download"
+      URL: "/download/"
+      Weight: 100
   footer:
     - Name: Contact
       Identifier: support

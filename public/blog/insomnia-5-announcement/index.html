@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>
+    Insomnia 5.0 – The Biggest Release Yet! |
+    Redcell Talent Accelerator
+  </title>
+  <meta name="author" content="">
+  <meta name="description"
+        content="Powerful talent accelerator delivering improved ROI to clients through cookie management, environment variables, code generation, and authentication for Mac, Window, and Linux">
+  <meta name="generator" content="Hugo 0.34" />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Redcell Talent Accelerator",
+        "url": "https://redcell-191816.firebaseapp.com/"
+    }
+
+
+
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://redcell-191816.firebaseapp.com/",
+      "logo": "https://redcell-191816.firebaseapp.com/images/icon.png",
+      "name": "Redcell Talent Accelerator",
+      "sameAs": [
+        "https://twitter.com/",
+        "https://plus.google.com/+"
+      ]
+    }
+
+
+
+  </script>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@"/>
+  <meta name="twitter:title" content="Insomnia 5.0 – The Biggest Release Yet!"/>
+  <meta name="twitter:description"
+        content="TL;DR – This update brings contextual autocomplete, more authentication types, and
+better debugging! &#128079;
+
+It&rsquo;s been over a month since the last release but version 5.0 is finally here!
+So, find a chair, take a seat, and brace yourself for what&rsquo;s about to come.
+
+"/>
+  <meta name="twitter:image"
+        content="https://redcell-191816.firebaseapp.com/images/twitter-card-icon.png"/>
+  
+  <meta property="og:url" content="https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Insomnia 5.0 – The Biggest Release Yet!"/>
+  <meta property="og:description"
+        content="TL;DR – This update brings contextual autocomplete, more authentication types, and
+better debugging! &#128079;
+
+It&rsquo;s been over a month since the last release but version 5.0 is finally here!
+So, find a chair, take a seat, and brace yourself for what&rsquo;s about to come.
+
+"/>
+  <meta property="og:image" content="https://redcell-191816.firebaseapp.com/images/twitter-card-icon.png"/>
+  
+  
+
+  
+<script>
+  (function () {
+    var disableGA = window.localStorage['disableGA'] ||
+      window.location.hostname === 'localhost';
+
+    var s = window.location.search;
+    if (s.indexOf('state=') >= 0 && s.indexOf('code=') >= 0) {
+      
+      disableGA = true;
+    }
+
+    if (!disableGA) {
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-86416787-1', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview');
+    } else {
+      console.log('-- Google Analytics Disabled for ' + window.location.hostname + ' --');
+      window.ga = function () {
+        console.log('GA', arguments);
+      };
+    }
+  })();
+</script>
+
+
+  
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://redcell-191816.firebaseapp.com/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://redcell-191816.firebaseapp.com/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://redcell-191816.firebaseapp.com/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://redcell-191816.firebaseapp.com/images/favicon/manifest.json">
+  <link rel="mask-icon" href="https://redcell-191816.firebaseapp.com/images/favicon/safari-pinned-tab.svg" color="#584dbc">
+  <link rel="shortcut icon" href="https://redcell-191816.firebaseapp.com/images/favicon/favicon.ico">
+  <meta name="msapplication-config" content="https://redcell-191816.firebaseapp.com/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://redcell-191816.firebaseapp.com/css/simple-grid.min.css">
+  <link rel="stylesheet" href="https://redcell-191816.firebaseapp.com/css/base.css">
+  
+  <link rel="stylesheet" href="https://redcell-191816.firebaseapp.com/css/main.css">
+  
+</head>
+
+<body class="template-blog">
+
+
+<script src="https://use.fontawesome.com/93839bed07.js" async></script>
+
+
+
+  
+    
+    
+  
+
+
+<nav class="navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 navbar__container">
+        <a href="https://redcell-191816.firebaseapp.com/" class="navbar__icon">
+          <img src="/images/icon-small.png" alt="Redcell icon image">
+        </a>
+        <a href="https://redcell-191816.firebaseapp.com/" class="navbar__title">
+          <h1></h1>
+        </a>
+
+        
+        <ul class="navbar__items">
+          
+          <li data-menu-item="docs">
+            
+            <a href="https://redcell.ai">Docs</a>
+            
+          </li>
+          
+          <li data-menu-item="blog">
+            
+            <a href="/blog/">Blog</a>
+            
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  if (localStorage && localStorage.currentSessionId) {
+    document.body.setAttribute('data-logged-in', 'yes');
+  } else {
+    document.body.setAttribute('data-logged-in', 'no');
+  }
+</script>
+
+
+<main role="main">
+  <article>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Insomnia 5.0 – The Biggest Release Yet!</h1>
+            
+            <div class="meta">
+              
+              <time datetime='April 5, 2017'>
+                April 5, 2017
+              </time>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+
+
+    <section class="content container">
+      <div class="row">
+        <div class="col-12">
+          <p><strong>TL;DR – This update brings contextual autocomplete, more authentication types, and
+better debugging!</strong> &#128079;</p>
+
+<p>It&rsquo;s been over a month since the last release but version 5.0 is finally here!
+So, find a chair, take a seat, and brace yourself for what&rsquo;s about to come.</p>
+
+<p></p>
+
+<p><img src="https://media.giphy.com/media/grjSZjbnxudq0/giphy.gif" alt="Excited dog sitting" /></p>
+
+<p>Now that you&rsquo;re prepared, let&rsquo;s dive into the new stuff.</p>
+
+<h2 id="autocomplete-everywhere-128640">Autocomplete, Everywhere &#128640;</h2>
+
+<p>By far the biggest feature of 5.0 is the introduction of autocomplete. Now, just
+like your favourite code editor, Insomnia will suggest completions for common things
+like variable names, URLs, HTTP headers, and template tags.</p>
+
+<p><img title="Insomnia Autocomplete" src="/images/blog/version-5/autocomplete.gif" class="small" /></p>
+
+<h2 id="rendering-errors-and-debugging-128680">Rendering Errors and Debugging &#128680;</h2>
+
+<p>The new autocomplete system involved making some core changes to the rendering pipeline so,
+while that was happening, I spent some time improving the user experience around render
+errors.</p>
+
+<p>The app now displays errors inline <em>before</em> the request is sent. That&rsquo;s right! No more
+wondering whether or not you typed in your variable name correctly. &#128526;</p>
+
+<p><img title="Better error reporting" src="/images/blog/version-5/render-errors.png" class="small" /></p>
+
+<p>Besides better error reporting, the debug experience is also improved. Insomnia can now
+render previews on hover, and also now provides and interactive variable editor for even
+more control.</p>
+
+<p><img title="Insomnia Render Error" src="/images/blog/version-5/variable-error.gif" class="small" /></p>
+
+<h2 id="new-libcurl-network-backend-and-timeline-127959">New <code>libcurl</code> Network Backend and Timeline &#127959;</h2>
+
+<p><a href="https://curl.haxx.se/">Curl</a> is one of the most popular and feature-rich HTTP clients in
+the world and its command-line interface is often used for debugging and testing of APIs –
+making it a perfect fit for powering Insomnia&rsquo;s network stack.</p>
+
+<p>Every network request made through Insomnia will now be sent using the <code>libcurl</code> C API.
+Using Curl not only improves Insomnia&rsquo;s reliability, but it also makes it possible to
+implement more advanced features like network throttling and download progress in the future
+(coming soon).</p>
+
+<p>Thanks to <code>libcurl</code>, there is a new <em>Timeline</em> view that shows a debug log similar to the
+output when using Curl&rsquo;s <code>--verbose</code> flag. This is extremely valuable for debugging
+network problems when it&rsquo;s not clear exactly what&rsquo;s going wrong.</p>
+
+<p><img title="Timeline Debugging View" src="/images/blog/version-5/curl.png" class="small" /></p>
+
+<p>I would like to give a huge thanks to the maintainer of
+<a href="https://github.com/JCMais/node-libcurl/"><code>node-libcurl</code></a>. Without this project, integrating
+Curl into Insomnia would have taken a lot more work.</p>
+
+<h2 id="oauth-2-0-digest-and-ntlm-authentication-128272">OAuth 2.0, Digest, and NTLM Authentication &#128272;</h2>
+
+<p>OAuth 2.0 is an extremely popular authentication mechanism, meaning Insomnia can now
+easily interact with many popular APIs like GitHub, Dropbox, Facebook, and Google. Simply
+fill out a few OAuth 2.0 parameters and Insomnia will take care of user authentication,
+generation of the <code>Authorization</code> header, and renewing refresh tokens when needed.</p>
+
+<p><em>Insomnia supports all four OAuth 2.0 grant types so it should be able to handle anything
+you throw at it.</em></p>
+
+<p><img src="/images/blog/version-5/dropbox.gif" alt="Insomnia OAuth 2.0 Demo" /></p>
+
+<p>Along with OAuth 2.0, Insomnia now supports both
+<a href="https://en.wikipedia.org/wiki/Digest_access_authentication">Digest</a> and
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749(v=vs.85).aspx">NTLM (Windows)</a>
+authentication.</p>
+
+<h2 id="sortable-key-value-editors-9994">Sortable Key-Value Editors &#9994;</h2>
+
+<p>If you like dragons, you&rsquo;ll love the new drag-n-drop sorting of Insomnia&rsquo;s key-value fields.
+Satisfy your inner perfectionist and sort your headers, query parameters, and form data whatever
+way you want!</p>
+
+<p><img title="Insomnia Autocomplete" src="/images/blog/version-5/sort.gif" class="small" /></p>
+
+<p><em>Alright, this one isn&rsquo;t that exciting, but it was so heavily requested that it made sense
+to talk about it in this post.</em></p>
+
+<h2 id="so-much-more-127813-127815-127817-127820-127827">So Much More &#127813;&#127815;&#127817;&#127820;&#127827;</h2>
+
+<p>There is so much more that didn&rsquo;t make it into this post that I know you&rsquo;ll love.
+If you&rsquo;re curious you can view the full <a href="/changelog/5.0.1/">release notes</a>, but here&rsquo;s
+a summary of the most notable ones missed:</p>
+
+<ul>
+<li>Environment variables and template tags now highlighted throughout the app</li>
+<li>Added per-request settings for controlling cookies, rendering, and URL encoding</li>
+<li>Digest and NTLM authentication now supported in proxy</li>
+<li>Custom HTTP methods now supported</li>
+<li>App panes now resizable when in vertical layout</li>
+<li>Response view types have been reworked to behave more intuitively</li>
+</ul>
+
+<h2 id="thanks-for-the-support-127867">Thanks for the Support! &#127867;</h2>
+
+<p>Almost all of the changes in version 5 are a direct result of the
+hundreds of email conversations I&rsquo;ve had with users over the past year so &ldquo;<strong>thank you!</strong>&ldquo;
+and keep them email coming! &#128140;</p>
+
+<p>Also, if you&rsquo;d like to help support future development and get bonus features like
+cloud sync, check out <a href="/pricing">Insomnia Plus</a>.</p>
+
+<p><span class="text-lg">&#127939;&#128168;</span> Time to get started on the next big thing&hellip;</p>
+
+<p>~ Gregory</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+<section class="tags">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+<a class="button tags__tag"
+   href="https://redcell-191816.firebaseapp.com/tags/update">
+  update
+</a>
+
+<a class="button tags__tag"
+   href="https://redcell-191816.firebaseapp.com/tags/announcement">
+  announcement
+</a>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+  </article>
+
+  
+  <section class="section--bordered share">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="subtle">
+  Share this post &#128522; &#128640;
+</p>
+<div class="share-buttons">
+
+  
+  <a
+    href="http://twitter.com/share?url=https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/&text=Insomnia%205.0%20%e2%80%93%20The%20Biggest%20Release%20Yet!&via="
+    onclick="window.open(this.href, 'twitter-share', 'width=800,height=600');return false;"
+    title="Share on Twitter"
+    class="button--share button twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+
+  
+  <a href="https://plus.google.com/share?url=https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/"
+     onclick="window.open(this.href, 'google-plus-share');return false;"
+     title="Share on Google+"
+     class="button--share button google-plus">
+    <i class="fa fa-google-plus"></i>
+  </a>
+
+  
+  <a href="http://reddit.com/submit?url=https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/&title=Insomnia%205.0%20%e2%80%93%20The%20Biggest%20Release%20Yet!"
+     onclick="window.open(this.href, 'reddit-share', 'width=900,height=600');return false;"
+     title="Post to Reddit"
+     class="button--share button reddit">
+    <i class="fa fa-reddit"></i>
+  </a>
+
+  
+  <a href="http://www.facebook.com/sharer/sharer.php?u=https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/"
+     onclick="window.open(this.href, 'facebook-share', 'width=800,height=600');return false;"
+     title="Share on Facebook"
+     class="button--share button facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+
+  
+  <a
+    href="http://www.stumbleupon.com/submit?url=https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/&title=Insomnia%205.0%20%e2%80%93%20The%20Biggest%20Release%20Yet!"
+    onclick="window.open(this.href, 'stumbleupon-share', 'width=800,height=600');return false;"
+    title="Post to StumbleUpon"
+    class="button--share button stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+  </a>
+
+  
+  <a
+    href="http://www.linkedin.com/shareArticle?url=https://redcell-191816.firebaseapp.com/blog/insomnia-5-announcement/&title=Insomnia%205.0%20%e2%80%93%20The%20Biggest%20Release%20Yet!"
+    onclick="window.open(this.href, 'linkedin-share', 'width=800,height=600');return false;"
+    title="Share on LinkedIn"
+    class="button--share button linkedin">
+    <i class="fa fa-linkedin"></i>
+  </a>
+
+  
+  <a href="mailto:?subject=Insomnia%205.0%20%e2%80%93%20The%20Biggest%20Release%20Yet!"
+     target="_blank"
+     title="Share via email"
+     onclick="window.open(this.href, 'email-share', 'width=800,height=600');return false;"
+     class="button--share button email">
+    <i class="fa fa-envelope"></i>
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="comments">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          
+          <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "redcell-talent" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="dark no-margin padding-bottom padding-top">
+    <div class="container">
+      <div class="row center">
+        <div class="col-8">
+          <p class="no-margin" style="margin: 0.6rem;">
+            Ready to speed up your API testing workflow?
+          </p>
+        </div>
+        <div class="col-4">
+          <a href="/download" class="button __download-link">Download</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <section class="dark github-contributors">
+  <div>
+    Thanks to all
+    <a href="https://github.com/getinsomnia/insomnia/graphs/contributors">contributors</a>
+    <span style="color:#fff">🎉👏</span>
+  </div>
+  <div class="github-contributors__users">
+    
+    <a href="https://github.com/gschier"
+       class="github-contributors__avatar"
+       title="1333 contributions from @gschier"
+       target="_blank"
+       data-bg="https://avatars1.githubusercontent.com/u/587576?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/BeeeQueue"
+       class="github-contributors__avatar"
+       title="7 contributions from @BeeeQueue"
+       target="_blank"
+       data-bg="https://avatars2.githubusercontent.com/u/472500?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/focusaurus"
+       class="github-contributors__avatar"
+       title="4 contributions from @focusaurus"
+       target="_blank"
+       data-bg="https://avatars1.githubusercontent.com/u/482377?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/Atvaark"
+       class="github-contributors__avatar"
+       title="3 contributions from @Atvaark"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/5101884?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/dmlittle"
+       class="github-contributors__avatar"
+       title="3 contributions from @dmlittle"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/3803621?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/slawus"
+       class="github-contributors__avatar"
+       title="2 contributions from @slawus"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/1429660?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/Antoine38660"
+       class="github-contributors__avatar"
+       title="1 contribution from @Antoine38660"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/9287184?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/BrandonRomano"
+       class="github-contributors__avatar"
+       title="1 contribution from @BrandonRomano"
+       target="_blank"
+       data-bg="https://avatars1.githubusercontent.com/u/2105067?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/luveti"
+       class="github-contributors__avatar"
+       title="1 contribution from @luveti"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/4952718?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/Subzidion"
+       class="github-contributors__avatar"
+       title="1 contribution from @Subzidion"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/3676230?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/moxuz"
+       class="github-contributors__avatar"
+       title="1 contribution from @moxuz"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/9087150?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/dogancelik"
+       class="github-contributors__avatar"
+       title="1 contribution from @dogancelik"
+       target="_blank"
+       data-bg="https://avatars1.githubusercontent.com/u/486818?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/ganderzz"
+       class="github-contributors__avatar"
+       title="1 contribution from @ganderzz"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/5566054?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/aldreth"
+       class="github-contributors__avatar"
+       title="1 contribution from @aldreth"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/389284?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/emdfonseca"
+       class="github-contributors__avatar"
+       title="1 contribution from @emdfonseca"
+       target="_blank"
+       data-bg="https://avatars1.githubusercontent.com/u/12010090?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/fabiomargarido"
+       class="github-contributors__avatar"
+       title="1 contribution from @fabiomargarido"
+       target="_blank"
+       data-bg="https://avatars2.githubusercontent.com/u/649114?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/fbenz"
+       class="github-contributors__avatar"
+       title="1 contribution from @fbenz"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/1205697?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/gerrytan"
+       class="github-contributors__avatar"
+       title="1 contribution from @gerrytan"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/2316198?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/hwaring"
+       class="github-contributors__avatar"
+       title="1 contribution from @hwaring"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/3076380?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/narhen"
+       class="github-contributors__avatar"
+       title="1 contribution from @narhen"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/1045380?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/mai7star"
+       class="github-contributors__avatar"
+       title="1 contribution from @mai7star"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/1502776?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/iansu"
+       class="github-contributors__avatar"
+       title="1 contribution from @iansu"
+       target="_blank"
+       data-bg="https://avatars2.githubusercontent.com/u/433725?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/bannmann"
+       class="github-contributors__avatar"
+       title="1 contribution from @bannmann"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/3303967?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/starJammer"
+       class="github-contributors__avatar"
+       title="1 contribution from @starJammer"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/1644304?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/jgiovaresco"
+       class="github-contributors__avatar"
+       title="1 contribution from @jgiovaresco"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/4171593?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/k-nut"
+       class="github-contributors__avatar"
+       title="1 contribution from @k-nut"
+       target="_blank"
+       data-bg="https://avatars1.githubusercontent.com/u/1096357?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/LouisStAmour"
+       class="github-contributors__avatar"
+       title="1 contribution from @LouisStAmour"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/53444?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/derpoho"
+       class="github-contributors__avatar"
+       title="1 contribution from @derpoho"
+       target="_blank"
+       data-bg="https://avatars1.githubusercontent.com/u/253591?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/flexiondotorg"
+       class="github-contributors__avatar"
+       title="1 contribution from @flexiondotorg"
+       target="_blank"
+       data-bg="https://avatars3.githubusercontent.com/u/304639?v=4&s=40">&nbsp;</a>
+    
+    <a href="https://github.com/matthewshirley"
+       class="github-contributors__avatar"
+       title="1 contribution from @matthewshirley"
+       target="_blank"
+       data-bg="https://avatars0.githubusercontent.com/u/450704?v=4&s=40">&nbsp;</a>
+    
+  </div>
+  <script>
+    (function () {
+      
+      window.onload = function () {
+        for (var el of document.querySelectorAll('.github-contributors__avatar')) {
+          el.style.backgroundImage = 'url(' + el.getAttribute('data-bg') + ')';
+        }
+      }
+    })();
+  </script>
+</section>
+
+  <section>
+    <p class="footer__menu">
+      
+
+      
+
+      
+
+      
+      
+      
+      
+      
+      <a href="/support/">Contact</a>
+      
+      <a href="/transparency/">Transparency</a>
+      
+      <a href="/license/">License</a>
+      
+      <a href="/terms/">Terms</a>
+      
+      
+    </p>
+    <p class="text-sm">
+      &copy; 2018
+      <a href="https://redcell.ai" target="_blank">
+        Redcell, Pittsburgh, PA
+      </a>
+    </p>
+  </section>
+</footer>
+
+
+
+<script async src="https://redcell-191816.firebaseapp.com/javascript/build/main.min.js"></script>
+
+
+
+</body>
+</html>

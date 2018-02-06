@@ -341,7 +341,7 @@ header.header--big {
 
 .notice.warn {
     color: #222;
-    border-color: rgb(209, 141, 43);
+    border-color: rgb(255,51,51);
     background: rgba(223, 116, 10, 0.05);
 }
 
@@ -476,7 +476,7 @@ button[disabled],
 
 .button:not([disabled]):focus,
 .button:not([disabled]):hover {
-    background: #675BC0;
+    background: #ff3333;
 }
 
 .button:not([disabled]):focus,
@@ -587,7 +587,7 @@ button[disabled],
 
 .form-control.error input,
 .form-control.error input:focus {
-    color: #ff3138;
+    color: #ff3333;
     border-color: inherit;
 }
 
@@ -844,7 +844,7 @@ body.floating-navbar .navbar__icon img {
 
 .footer {
     text-align: center;
-    background: linear-gradient(165deg, #6e60cc 0%, #484389 100%);
+    background: linear-gradient(165deg, #ff3333 0%, #E21832 100%);
     overflow: auto;
     align-self: flex-end;
 }
@@ -999,7 +999,7 @@ a.tags__tag {
 
 a.tags__tag:hover {
     text-decoration: none;
-    background: #7f62f3;
+    background: #ff3333;
     color: #fff;
 }
 

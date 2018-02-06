@@ -1,17 +1,39 @@
-<section class="dark github-contributors">
-  <div>
-    Thanks to all
-    <a href="https://github.com/getinsomnia/insomnia/graphs/contributors">contributors</a>
-    <span style="color:#fff">🎉👏</span>
-  </div>
-  <div class="github-contributors__users">
-    {{ range $c := getJSON "https://api.github.com/repos/getinsomnia/insomnia/contributors" }}
-    <a href="{{ $c.html_url}}"
-       class="github-contributors__avatar"
-       title="{{ $c.contributions }} contribution{{ if ne $c.contributions 1.0 }}s{{ end }} from @{{ $c.login }}"
-       target="_blank"
-       data-bg="{{ $c.avatar_url }}&s=40">&nbsp;</a>
-    {{ end }}
+
+<section class="no-margin padding-bottom-lg padding-top-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 center">
+        <h2 class="text-xl">Join our growing list of satisfied clients</h2>
+        <p>Discover the difference of our augmented talent solutions.</p>
+      </div>
+    </div>
+  
+    <!-- <div class="row feature-list">
+      <div class="flex-container">
+        <div>
+          <img src="https://res.cloudinary.com/victorydev/image/upload/v1513363116/naswhitingfield_ywopbg.jpg"></img>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/victorydev/image/upload/v1513363116/naswhitingfield_ywopbg.jpg"></img>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/victorydev/image/upload/v1513363116/naswhitingfield_ywopbg.jpg"></img>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/victorydev/image/upload/v1513363116/naswhitingfield_ywopbg.jpg"></img>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/victorydev/image/upload/v1513363116/naswhitingfield_ywopbg.jpg"></img>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/victorydev/image/upload/v1513363116/naswhitingfield_ywopbg.jpg"></img>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/victorydev/image/upload/v1513363116/naswhitingfield_ywopbg.jpg"></img>
+        </div>
+          
+    </div>         -->
+    
   </div>
   <script>
     (function () {
