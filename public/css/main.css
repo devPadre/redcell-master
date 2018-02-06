@@ -3,12 +3,12 @@
 /* ~~~~~ */
 
 a, .button {
-    color: #745be6;
+    color: #ff3333;
     font-weight: 400 !important;
 }
 
 a:hover, .button:hover {
-    color: #6147d1;
+    color: #ff3333;
 }
 
 /* ~~~~~~~~~ */
@@ -60,7 +60,7 @@ img.jumbotron__icon {
 .jumbotron .button:hover {
     text-decoration: none;
     background: #fff;
-    color: #675BC0;
+    color: #ff3333;
 }
 
 .jumbotron__img-container {
@@ -269,22 +269,22 @@ article a > img:hover {
 }
 
 .pricing__column--best, .pricing__column--best > .pricing__column__header {
-    border-color: #6a57d5;
+    border-color: #ff3333;
 }
 
 .pricing__column--best > .pricing__column__header {
-    background: #6a57d5;
+    background: #ff3333;
 }
 
 .pricing__column--best > .pricing__column__footer .button {
-    color: #6a57d5;
-    border-color: #6a57d5;
+    color: #ff3333;
+    border-color: #ff3333;
 }
 
 .pricing__column--best > .pricing__column__footer .button:hover {
     color: #fff;
-    border-color: #6a57d5;
-    background-color: #6a57d5;
+    border-color: #ff3333;
+    background-color: #ff3333;
 }
 
 .pricing__column--best > .pricing__column__header h1 {
@@ -476,6 +476,27 @@ body[data-logged-in="no"] .show-logged-out {
     text-align: center;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-between;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .flex-container > div {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
 /* ~~~~~~~~~~~~~ */
 /* MEDIA QUERIES */
 /* ~~~~~~~~~~~~~ */
@@ -523,6 +544,7 @@ body[data-logged-in="no"] .show-logged-out {
         display: none;
     }
 }
+
 
 @media only screen and (max-width: 60rem) {
     .navbar__items li[data-menu-item="github"] {
