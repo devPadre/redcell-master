@@ -1,5 +1,5 @@
 ---
-baseurl: "https://redcell-191816.firebaseapp.com/"
+baseurl: "https://redcell.ai/"
 languageCode: "en-us"
 copyright: "Redcell, Pittsburgh, PA"
 title: "Redcell Talent Accelerator"
@@ -33,14 +33,14 @@ menu:
     #   Pre: "button"
     #   URL: "/app/account/"
     #   Weight: 5
-    - Name: "Sign Up"
-      Identifier: "signup"
-      Pre: "button"
-      URL: "/app/signup/"
-      Weight: 99
-    - Name: "Download"
+    # - Name: "Sign Up"
+    #   Identifier: "signup"
+    #   Pre: "button"
+    #   URL: "/app/signup/"
+    #   Weight: 99
+    - Name: "Learn More"
       Identifier: "download"
-      URL: "/download/"
+      URL: /support/
       Weight: 100
   footer:
     - Name: Contact
@@ -59,9 +59,9 @@ menu:
       Identifier: terms
       URL: /terms/
       weight: 100
-    - Name: License
-      Identifier: license
-      URL: /license/
+    - Name: Privacy
+      Identifier: privacy
+      URL: /privacy/
       weight: 100
 author:
   name: "Daniel Nichols"

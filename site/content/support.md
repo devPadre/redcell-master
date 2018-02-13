@@ -1,34 +1,29 @@
 ---
-title: Support and Feedback
+title: Resources and Support
 slug: support
-subTitle: Get Help or Join the Community
+subTitle: Learn more about the Redcell community
 type: skinny
 ---
 
-## Documentation
+## Learn more about our Augmented Talent Solutions
 
-View full help articles at [support.insomnia.rest](https://support.insomnia.rest).
+Click this link to  [View our Brochure](https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d).
 
-## Bug Reports and Feature Requests
-
-General application bugs and issues should be submitted to the
-GitHub Repository. Please see the 
-[Contributing Guidelines](https://github.com/getinsomnia/insomnia/blob/develop/CONTRIBUTING.md)
-to get started.
+<!-- <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/616532ee-70ec-40d7-9f31-208274561e1d?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allowfullscreen=""></iframe> -->
 
 ## Slack Group
 
 Have a quick question? Chatting on Slack is a great way to get answers from real 
-people. [Join Now](https://chat.insomnia.rest) to get started.
+people. [Join Now](https://join.slack.com/t/redcell-ai/shared_invite/enQtMzE0MDUwMjI5NDk1LWQ4ZTYzN2IxY2Q4NzQ4MzQ1Y2Q0MTQ0NmJhZjJmZjMzMjdkMWNmMWU5ODE2ZTA2Mzc5ZGQ0Mjk0MTM5ZWU5Y2U) to get started.
 
 ## Email Support
 
 Any other feedback, questions, concerns can be sent to 
-[support@insomnia.rest](mailto:support@insomnia.rest) and I will respond ASAP. 
+[contact@redcell.ai](mailto:contact@redcell.ai) and we will respond ASAP. 
 
 <p class="notice info">
-Please avoid sending bug reports or feature requests via email. It benefits everyone if these
-are submitted to the 
-<a href="https://github.com/getinsomnia/insomnia/blob/develop/CONTRIBUTING.md">GitHub Repository</a>
+Please avoid sending urgent requests via email. It benefits everyone if these
+are submitted on our Slack Channel to get the quickest turnaround. So reach us on our 
+<a href="https://join.slack.com/t/redcell-ai/shared_invite/enQtMzE0MDUwMjI5NDk1LWQ4ZTYzN2IxY2Q4NzQ4MzQ1Y2Q0MTQ0NmJhZjJmZjMzMjdkMWNmMWU5ODE2ZTA2Mzc5ZGQ0Mjk0MTM5ZWU5Y2U">Redcell Talent Slack Channel</a>
 instead.
 </p>

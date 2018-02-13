@@ -136,7 +136,7 @@
           </p>
           {{ partial "contact-button" }}
           &nbsp;
-          <a href="/teams" class="button button--no-outline">Become a Partner</a>
+          <a href="/partners" class="button button--no-outline">Become a Partner</a>
         </div>
       </div>
     </div>
@@ -199,6 +199,22 @@
 
 {{ partial "footer" . }}
 {{ partial "js" . }}
+
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+</script>
 
 </body>
 </html>

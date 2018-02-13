@@ -1,0 +1,8 @@
+---
+date: 2018-01-04
+draft: false
+title: Alas, you are offline!
+type: offline
+---
+
+Hey! You're offline. Go grab a connection. We'll wait right here for you.

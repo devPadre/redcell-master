@@ -755,12 +755,12 @@ body.floating-navbar .navbar {
     top: 0;
     overflow: hidden;
     z-index: 9999;
-    background: linear-gradient(165deg, #262929 0%, #000000 100%);
+    background: linear-gradient(270deg, #181616 15%, #000000 100%);
     width: 100%;
 }
 
 body.floating-navbar .navbar a {
-    opacity: 0.75;
+    opacity: 0.85;
     transition: opacity 200ms;
     color: #fff !important;
 }
@@ -804,9 +804,9 @@ body.floating-navbar .navbar a:hover {
 }
 
 .navbar__icon {
-    min-width: 5.9rem;
-    width: 7.9rem;
-    padding: 1px;
+    min-width: 6.9rem;
+    width: 8.9rem;
+    padding: 10px;
     height: auto;
 }
 

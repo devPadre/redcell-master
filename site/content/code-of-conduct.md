@@ -4,7 +4,7 @@ slug: code-of-conduct
 type: skinny
 ---
 
-Like the technical community as a whole, the Insomnia community is made up of a mixture 
+Like the technical community as a whole, the Redcell community is made up of a mixture 
 of professionals and volunteers from all over the world, working on every aspect of the 
 mission – including mentorship, teaching, and connecting people.
 
@@ -16,13 +16,13 @@ This isn’t an exhaustive list of things that you can’t do. Rather, take it i
 in which it’s intended - a guide to make it easier to enrich all of us and the technical 
 communities in which we participate.
 
-This code of conduct applies to all spaces managed by the Insomnia project, including Slack, 
+This code of conduct applies to all spaces managed by the Redcell project, including Slack, 
 the issue tracker, and any other forums created for the project which the community uses 
 for communication. In addition, violations of this code outside these spaces may affect 
 a person's ability to participate within them.
 
 If you believe someone is violating the code of conduct, we ask that you report it by 
-emailing [support@insomnia.rest](mailto:support@insomnia.rest). For more details 
+emailing [contact@redcell.ai](mailto:contact@redcell.ai). For more details 
 please see our Reporting Guidelines
 
 - **Be friendly and patient.**
@@ -40,8 +40,8 @@ please see our Reporting Guidelines
   excuse for poor behavior and poor manners. We might all experience some frustration 
   now and then, but we cannot allow that frustration to turn into a personal attack. 
   It’s important to remember that a community where people feel uncomfortable or 
-  threatened is not a productive one. Members of the Insomnia community should be respectful 
-  when dealing with other members as well as with people outside the Insomnia community.
+  threatened is not a productive one. Members of the Redcell community should be respectful 
+  when dealing with other members as well as with people outside the Redcell community.
 - **Be careful in the words that you choose.** We are a community of professionals, 
   and we conduct ourselves professionally. Be kind to others. Do not insult or put 
   down other participants. Harassment and other exclusionary behavior aren't acceptable. 
@@ -55,9 +55,9 @@ please see our Reporting Guidelines
   - Advocating for, or encouraging, any of the above behavior.
   - Repeated harassment of others. In general, if someone asks you to stop, then stop.
 - **When we disagree, try to understand why.** Disagreements, both social and technical, 
-happen all the time and Insomnia is no exception. It is important that we resolve 
+happen all the time and Redcell is no exception. It is important that we resolve 
 disagreements and differing views constructively. Remember that we’re different. The 
-strength of Insomnia comes from its varied community, people from a wide range of backgrounds. 
+strength of Redcell comes from its varied community, people from a wide range of backgrounds. 
 Different people have different perspectives on issues. Being unable to understand why 
 someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human 
 to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve 
@@ -68,5 +68,5 @@ Original text courtesy of the
 
 ## Questions?
 
-Please send all questions or concerns to [support@insomnia.rest](mailto:support@insomnia.rest).
+Please send all questions or concerns to [contact@redcell.ai](mailto:contact@redcell.ai).
 

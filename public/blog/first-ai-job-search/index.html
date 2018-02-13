@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>
+    Why we built the first AI for military in transition |
+    Redcell Talent Accelerator
+  </title>
+  <meta name="author" content="">
+  <meta name="description"
+        content="Powerful talent accelerator delivering improved ROI to clients through cookie management, environment variables, code generation, and authentication for Mac, Window, and Linux">
+  <meta name="generator" content="Hugo 0.34" />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Redcell Talent Accelerator",
+        "url": "https://redcell.ai/"
+    }
+
+
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://redcell.ai/",
+      "logo": "https://redcell.ai/images/icon.png",
+      "name": "Redcell Talent Accelerator",
+      "sameAs": [
+        "https://twitter.com/",
+        "https://plus.google.com/+"
+      ]
+    }
+
+
+
+  </script>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@"/>
+  <meta name="twitter:title" content="Why we built the first AI for military in transition"/>
+  <meta name="twitter:description"
+        content="Why we built the first A.I. for military in transition Talk to Gunny Jobs
+#FillTheTrough
+There are more than 42,000 non-profits with a military and veteran community focus, more than 14,000 OJT programs and 36,000 education programs in total eligible to receive GI Bill funds. Military Transition Assistance Programs (TAP) are mandatory for transitioning veterans. None of this takes into account the millions of individuals investing personally in assisting veterans during their transition to civilian life."/>
+  <meta name="twitter:image"
+        content="https://redcell.ai/images/twitter-card-icon.png"/>
+  
+  <meta property="og:url" content="https://redcell.ai/blog/first-ai-job-search/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Why we built the first AI for military in transition"/>
+  <meta property="og:description"
+        content="Why we built the first A.I. for military in transition Talk to Gunny Jobs
+#FillTheTrough
+There are more than 42,000 non-profits with a military and veteran community focus, more than 14,000 OJT programs and 36,000 education programs in total eligible to receive GI Bill funds. Military Transition Assistance Programs (TAP) are mandatory for transitioning veterans. None of this takes into account the millions of individuals investing personally in assisting veterans during their transition to civilian life."/>
+  <meta property="og:image" content="https://redcell.ai/images/twitter-card-icon.png"/>
+  
+  
+
+  
+<script>
+  (function () {
+    var disableGA = window.localStorage['disableGA'] ||
+      window.location.hostname === 'localhost';
+
+    var s = window.location.search;
+    if (s.indexOf('state=') >= 0 && s.indexOf('code=') >= 0) {
+      
+      disableGA = true;
+    }
+
+    if (!disableGA) {
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-113582687-1', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview');
+    } else {
+      console.log('-- Google Analytics Disabled for ' + window.location.hostname + ' --');
+      window.ga = function () {
+        console.log('GA', arguments);
+      };
+    }
+  })();
+</script>
+
+<script src="https://embed.small.chat/T94P46AF5G95V232UF.js" async></script>
+
+  
+
+  
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://redcell.ai/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://redcell.ai/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://redcell.ai/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://redcell.ai/images/favicon/manifest.json">
+  <link rel="mask-icon" href="https://redcell.ai/images/favicon/safari-pinned-tab.svg" color="#584dbc">
+  <link rel="shortcut icon" href="https://redcell.ai/images/favicon/favicon.ico">
+  <meta name="msapplication-config" content="https://redcell.ai/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<link rel="manifest" href="/manifest.json">
+
+  
+  <link rel="stylesheet" href="https://redcell.ai/css/simple-grid.min.css">
+  <link rel="stylesheet" href="https://redcell.ai/css/base.css">
+  
+  <link rel="stylesheet" href="https://redcell.ai/css/main.css">
+  
+</head>
+
+<body class="template-blog">
+
+
+<script src="https://use.fontawesome.com/93839bed07.js" async></script>
+
+
+<div>
+<nav class="navbar navbar-fixed-top navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <div class="row">
+        <div class="col-12 navbar__container navbar-expand-lg">
+            
+        <a href="https://redcell.ai/" class="navbar__icon">
+          <img src="/images/icon-small.png" alt="Redcell icon image">
+        </a>
+        <a href="https://redcell.ai/" class="navbar__title">
+          <h1></h1>
+        </a>
+
+        
+
+        <ul class="navbar__items">
+          
+          <li data-menu-item="blog">
+            
+            <a href="/blog/">Blog</a>
+            
+          </li>
+          
+          <li data-menu-item="download">
+            
+            <div>
+              <a href="/support/" class="button">Learn More</a>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  if (localStorage && localStorage.currentSessionId) {
+    document.body.setAttribute('data-logged-in', 'yes');
+  } else {
+    document.body.setAttribute('data-logged-in', 'no');
+  }
+</script>
+
+
+<main role="main">
+  <article>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Why we built the first AI for military in transition</h1>
+            
+            <div class="meta">
+              
+              <time datetime='September 19, 2017'>
+                September 19, 2017
+              </time>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+
+
+    <section class="content container">
+      <div class="row">
+        <div class="col-12">
+          
+
+<h1 id="why-we-built-the-first-a-i-for-military-in-transition">Why we built the first A.I. for military in transition</h1>
+
+<p><a href="https://www.facebook.com/gunnyjobs/">Talk to Gunny Jobs</a></p>
+
+<p>#FillTheTrough</p>
+
+<p>There are more than 42,000 non-profits with a military and veteran community focus, more than 14,000 OJT programs and 36,000 education programs in total eligible to receive GI Bill funds. Military Transition Assistance Programs (TAP) are mandatory for transitioning veterans. None of this takes into account the millions of individuals investing personally in assisting veterans during their transition to civilian life.</p>
+
+<p>The result: a record-low unemployment rate of 5.1 percent for Post-911 veterans in 2016 … a drop from the 2011 high of 12.1 percent.</p>
+
+<p><em>So …. Mission accomplished!?</em></p>
+
+<p>Perhaps not so much. Lagging indicators suggest that employment satisfaction is a considerable issue, with 44 percent of veterans leaving their new civilian job within the first year. While a number of research studies suggest that veterans eventually earn more than their non-veteran peers there is a recognized lag of time before this the case. That is, there appears to be a period of time between immediate exit from military service and the point at which veterans begin to exceed their non-veteran peers in term of civilian earnings. Newer research is only now emerging on Post-911 veterans, but seems to reinforce these findings.</p>
+
+<p>Let’s call it the Trough of Veteran Income Inequality and Dissatisfaction. The Chaplain in me suggests perhaps the “slough of despond” as an equally apt term, but that will only lead to unintended allegory. So I’ll stick with a very DoD acronym: TVIID or perhaps simply, “The Trough.”</p>
+
+<p>As a transitioning veteran research suggests that you’ve likely found yourself in “The Trough” upon exiting military service: making less than you did or disillusioned by the role you’re in, or both. Research also suggests that this trough not only exists today, but is pretty much a standard economic structure of the military transition experience.</p>
+
+<blockquote>
+<p>One would think that with millions of people and more than 80,000 programs dedicated to veteran success in civilian life that we would have solved this issue by new … or at least started to fill in the trough. There’s a catchy hashtag #FillTheTrough! But I digress as we were talking about A.I.</p>
+</blockquote>
+
+<p>For a number of years, we’ve had this dream of connecting military in transition with people like them … those that followed similar career paths in the hope that this sort of connection would lead to an escape velocity that would speed veterans toward civilian success and avoid “The Trough.” Mathematically and logically, this doesn’t really play out as logic is about the study of consequence and mathematics is really about proving general statements. In other words, you can’t prove a general assertion from a single observation.  What you can do is capture a preponderance of specific observations together to derive a general principle, from which you can make a logical statement.</p>
+
+<p>More simply put:</p>
+
+<pre><code>[NOT VALID]  A recently separated infantry soldier tells an active duty soldier of the same rank that they love shoveling dirt … therefore all infantry will love shoveling dirt. [NOT VALID]
+
+[VALID] Ten million separated infantry soldiers enjoy shoveling dirt after transition… therefore other infantry will enjoy shoveling dirt after separation. [VALID]
+</code></pre>
+
+<p>This example, of course, is purely fictional&hellip; as we all know that infantry don’t enjoy anything.</p>
+
+<p>It does highlight the challenges of the vast majority of 1:1 programs and mentoring initiatives, and even the challenge TAP facilitators face.  One person’s experience … even ten million experiences&hellip; don’t address the tens of thousands of viable options that may exist, and one person’s personal experiences may not be a fit at all.</p>
+
+<p>Enter artificial intelligence. Artificial intelligence is fairly simple conceptually, but brutally challenging mathematically. A neural network, or deep learning algorithm takes an input, processes that through a number of “hidden layer” calculations and produces an output. This is illustrated by the chart below of a proposed design for a facial recognition algorithm.</p>
+
+<p>Recent advances in both open source and affordable A.I. platforms has opened the door wide to the use of deep learning for a number of applications. Over the past few years, we have developed connections between the input - military occupation and the output - satisfaction in a given civilian career.</p>
+
+<p>Yes, pretty cool … but we’re still a long way from something that is truly predictive. What we lack is training … or basically … more data in the model to generate more accurate outcomes. While building this network out, we thought about different options for the human interface and decided to stick with the A.I. motif by designing a chatbot interface that could process natural language.</p>
+
+<p><em>Enter Gunny Jobs</em>. Gunny’s current knowledge set includes:</p>
+
+<pre><code>8,564 military occupations including their codes and titles. 
+1105 civilian occupations with their occupational codes and an average of 30 alternatives
+2318 Majors and Curriculum Codes
+Military Pay Rates and Ranks
+Military Branches
+A smattering of snarky conversation
+Natural Language Processing
+Cool hidden features that you may never find
+Many more features to come
+</code></pre>
+
+<p>His feature set, however, is still very nascent. Currently Gunny can chat [there are lots of hidden easter eggs in his conversational repertoire], Gunny plays a simple military occupation (MOS) guessing game that takes in new inputs. (who knows where vets will take that one), and he can perform a job search based on your MOS. So we’re nowhere near the predictive capabilities that we’re developing, but as it was suggested to a colleague … “you couldn’t talk when you were a day old … so Gunny’s already ahead of you!”</p>
+
+<p>With so much choice … so many options … veterans generally fall into “The Trough” because of the lack of real decision support tools that deliver meaningful results based on data. Eventually, we hope that Gunny Jobs can help address some of the gap … perhaps fill in a bit of the The Trough by consuming those millions of data inputs and over time delivering smarter outputs and recommendations. We’ve been collecting inputs on veteran employee and student satisfaction in their jobs and their majors for over a year now. While the progress is slow, we intend to integrate that data collection effort directly into Gunny Jobs.</p>
+
+<p>The beauty is that this technology is capable of not only integrating with Facebook Messenger as it already does, but also with the Google Assistant, Alexa, Cortana, Slack, Line, Skype, Vibe and numerous other platforms where servicemembers are. As artificial intelligence, Gunny Jobs does not sleep, his cloud-based core is always available … and he’s even available to augment the work of the millions of people who interact.</p>
+
+<p>We don’t intend for Gunny Jobs to replace transition staff … rather we hope that the collective voice of veterans will begin to compile a highly meaningful tool to #FillTheTrough for veterans in transition.</p>
+
+<p>If you want to find Gunny Jobs:</p>
+
+<blockquote>
+<p>Start a conversation with Gunny Jobs on Facebook Messenger.
+Start a conversation with Gunny Jobs on Twitter @GunnyJobs</p>
+</blockquote>
+
+<p>Very soon you’ll also be able ask the google assistant: “Hey Google, Talk to Gunny Jobs.”</p>
+
+<p>#FillTheTrough</p>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+<section class="tags">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+<a class="button tags__tag"
+   href="https://redcell.ai/tags/artificial-intelligence">
+  artificial intelligence
+</a>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+  </article>
+
+  
+  <section class="section--bordered share">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="subtle">
+  Share this post &#128522; &#128640;
+</p>
+<div class="share-buttons">
+
+  
+  <a
+    href="http://twitter.com/share?url=https://redcell.ai/blog/first-ai-job-search/&text=Why%20we%20built%20the%20first%20AI%20for%20military%20in%20transition&via="
+    onclick="window.open(this.href, 'twitter-share', 'width=800,height=600');return false;"
+    title="Share on Twitter"
+    class="button--share button twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+
+  
+  <a href="https://plus.google.com/share?url=https://redcell.ai/blog/first-ai-job-search/"
+     onclick="window.open(this.href, 'google-plus-share');return false;"
+     title="Share on Google+"
+     class="button--share button google-plus">
+    <i class="fa fa-google-plus"></i>
+  </a>
+
+  
+  <a href="http://reddit.com/submit?url=https://redcell.ai/blog/first-ai-job-search/&title=Why%20we%20built%20the%20first%20AI%20for%20military%20in%20transition"
+     onclick="window.open(this.href, 'reddit-share', 'width=900,height=600');return false;"
+     title="Post to Reddit"
+     class="button--share button reddit">
+    <i class="fa fa-reddit"></i>
+  </a>
+
+  
+  <a href="http://www.facebook.com/sharer/sharer.php?u=https://redcell.ai/blog/first-ai-job-search/"
+     onclick="window.open(this.href, 'facebook-share', 'width=800,height=600');return false;"
+     title="Share on Facebook"
+     class="button--share button facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+
+  
+  <a
+    href="http://www.stumbleupon.com/submit?url=https://redcell.ai/blog/first-ai-job-search/&title=Why%20we%20built%20the%20first%20AI%20for%20military%20in%20transition"
+    onclick="window.open(this.href, 'stumbleupon-share', 'width=800,height=600');return false;"
+    title="Post to StumbleUpon"
+    class="button--share button stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+  </a>
+
+  
+  <a
+    href="http://www.linkedin.com/shareArticle?url=https://redcell.ai/blog/first-ai-job-search/&title=Why%20we%20built%20the%20first%20AI%20for%20military%20in%20transition"
+    onclick="window.open(this.href, 'linkedin-share', 'width=800,height=600');return false;"
+    title="Share on LinkedIn"
+    class="button--share button linkedin">
+    <i class="fa fa-linkedin"></i>
+  </a>
+
+  
+  <a href="mailto:?subject=Why%20we%20built%20the%20first%20AI%20for%20military%20in%20transition"
+     target="_blank"
+     title="Share via email"
+     onclick="window.open(this.href, 'email-share', 'width=800,height=600');return false;"
+     class="button--share button email">
+    <i class="fa fa-envelope"></i>
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="comments">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          
+          <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "redcell-talent" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="dark no-margin padding-bottom padding-top">
+    <div class="container">
+      <div class="row center">
+        <div class="col-8">
+          <p class="no-margin" style="margin: 0.6rem;">
+            Ready to speed up your API testing workflow?
+          </p>
+        </div>
+        <div class="col-4">
+          <a href="https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d" class="button __download-link">Download</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  
+<section class="no-margin padding-bottom-lg padding-top-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 center">
+        <h2 class="text-xl">Join our growing list of satisfied clients</h2>
+        <p>Discover the transformative power of our Augmented Talent Solutions.</p>
+      </div>
+    </div>
+    
+  </div>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4273274.js"></script>
+
+</section>
+
+  <section>
+    <p class="footer__menu">
+      
+
+      
+
+      
+
+      
+      
+      
+      
+      
+      <a href="/support/">Contact</a>
+      
+      <a href="/transparency/">Transparency</a>
+      
+      <a href="/privacy/">Privacy</a>
+      
+      <a href="/terms/">Terms</a>
+      
+      
+    </p>
+    <p class="text-sm">
+      &copy; 2018
+      <a href="https://redcell.ai" target="_blank">
+        Redcell, Pittsburgh, PA
+      </a>
+    </p>
+  </section>
+</footer>
+
+
+
+<script async src="https://redcell.ai/javascript/build/main.min.js"></script>
+
+
+
+</body>
+</html>

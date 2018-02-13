@@ -16,6 +16,8 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
+
+
   <!-- Google Stuff -->
   <script type="application/ld+json">
     {
@@ -24,7 +26,6 @@
         "name": "{{ .Site.Title }}",
         "url": "{{ .Site.BaseURL }}"
     }
-
 
 
   </script>
@@ -111,6 +112,7 @@
   <!-- /Twitter Card -->
 
   {{ partial "extra-head" . }}
+  
 
   <!-- RSS -->
   {{ if .RSSLink }}
@@ -127,6 +129,9 @@
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon/favicon.ico">
   <meta name="msapplication-config" content="{{ .Site.BaseURL }}images/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- pwa manifest link -->
+<link rel="manifest" href="/manifest.json">
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/simple-grid.min.css">
