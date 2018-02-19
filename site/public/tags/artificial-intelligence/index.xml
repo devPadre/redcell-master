@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Artificial Intelligence on Redcell Talent Accelerator</title>
+        <link>https://redcell.ai/tags/artificial-intelligence/</link>
+        <description>Recent content in Artificial Intelligence on
+            Redcell Talent Accelerator
+        </description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Redcell, Pittsburgh, PA</copyright>
+        <lastBuildDate>
+            Fri, 19 Jan 2018 22:01:22 -0700
+        </lastBuildDate>
+        <atom:link href="/tags/artificial-intelligence/" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>A Guide to AI in HR</title>
+            <link>https://redcell.ai/blog/guide-artificial-intelligence-human-resources/</link>
+            <pubDate>
+                Fri, 19 Jan 2018 22:01:22 -0700
+            </pubDate>
+            
+            <guid>https://redcell.ai/blog/guide-artificial-intelligence-human-resources/</guid>
+            <description>
+                
+
+
+&lt;h1 id=&#34;a-guide-to-understanding-artificial-intelligence-in-human-resources&#34;&gt;A guide to understanding Artificial Intelligence in human resources.&lt;/h1&gt;
+
+&lt;p&gt;With a veritable explosion of investment, 2018 is clearly the year of artificial intelligence hype, and while human resources (HR) remains at the fringe of discussion, it is poised for disruption.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;But what does artificial intelligence really mean?  How close are we to achieving “meaningful use” - to steal a term from healthcare? Should you as a recruiter or HR Director care? Is your job or role at risk?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Without doubt, the questions outweigh the answers. While we won’t address all of those questions here, we do want to introduce several key concepts that underlie AI - and for professionals familiar with statistical analysis and probability, this will likely be an approach that makes more sense than the puffery that abounds.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/victorydev/image/upload/v1518442988/HR-Recruitment_tq1nzf.jpg?raw=true&#34; alt=&#34;Image of AI in HR&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the heart of an AI application lies the Neural Network, or in its simplest form the Artificial Neural Network (ANN). You will also encounter the Convolutional Neural Network (CNN) and finally Recurrent Neural Networks (RNN).
+These neural networks attempt to model the human brain - or how the brain processes information, and each has its specific use case.  Understanding the differences between ANN-CNN-RNN will help you identify both the scale and scope of a given task you are attempting, and help you avoid unnecessary costs when working with organizations offering AI solutions.&lt;/p&gt;
+
+&lt;p&gt;In brief, each type of neural net is aligned with a complex use case like classification, clustering and prediction. For example, image recognition and face recognition use CNN while Natural Language Processing (NLP) relies on RNN. ANN, the simpler ones of all the neural networks is often used for predictions involving numerical data.&lt;/p&gt;
+
+&lt;p&gt;An organization attempting to develop a chatbot interface might utilize RNN. An organization looking to add facial recognition to the patient intake process would rely on CNN, and a practice interested in predicting the probability of patient compliance would develop ANN models.&lt;/p&gt;
+
+&lt;p&gt;Most often, Artificial Intelligence is assumed to have predictive abilities combined with sight and speech processing .. in this use case all three deep learning models must be combined in a highly complex system … which very few AI applications do successfully at this point.&lt;/p&gt;
+
+&lt;h2 id=&#34;going-a-little-deeper-down-the-rabbit-hole&#34;&gt;Going a little deeper down the rabbit hole.&lt;/h2&gt;
+
+&lt;p&gt;For most immediate applications, the ANN is most appropriate … as prediction is generally the most valuable aid in a business setting. Prediction, however, doesn’t require artificial intelligence. In fact, the output of an ANN may be frustrating for HR as the weights within the hidden layers are just that … hidden.  With a general computer algorithm, a data scientist will set weights … generally based on previous studies or observations … and those weights will be visible and apparent.  The ANN generally works across so a large network of vectors that visualizing every weight is not only impractical … it is impossible.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;AI is a “black box” that is often impenetrable … even though it is mathematical.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A CNN on the other hand will learn to recognize patterns across space. This is particularly useful in visually-oriented applications such as recognizing a photo ID, or being able to connect a video stream of a person’s face to a stored photo ID. A CNN will learn to recognize components of an image (e.g., lines, curves, etc.) and then learn to combine these components to recognize larger structures (e.g., faces, objects, etc.).&lt;/p&gt;
+
+&lt;p&gt;Finally, the RNN will similarly learn to recognize patterns, but will do so across time. So a RNN that is trained to translate text might learn that &amp;ldquo;dog&amp;rdquo; should be translated differently if preceded by the word &amp;ldquo;hot&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;The mechanism by which the three kinds of NNs represent these patterns is different. In the case of a CNN, you are looking for the same patterns on all the different subfields of the image. In the case of a RNN you are (in the simplest case) feeding the hidden layers from the previous step as an additional input into the next step. While the RNN builds up memory in this process, it is not looking for the same patterns over different slices of time in the same way that a CNN is looking for the same patterns over different regions of space.&lt;/p&gt;
+
+&lt;p&gt;You could run a RNN on a single image for image captioning, for instance, and the meaning of &amp;ldquo;time&amp;rdquo; would simply be the order in which different parts of the image are processed. So objects initially processed will inform the captioning of later objects processed.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a sample diagram of what&amp;rsquo;s going on inside a type of RNN:
+&lt;img src=&#34;https://res.cloudinary.com/victorydev/image/upload/v1518443787/LSTM-RNN_e2bipi.jpg?raw=true&#34; alt=&#34;Image of an LSTM&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;so-how-should-hr-approach-ai-to-solve-a-particular-problem&#34;&gt;So how should HR approach AI to solve a particular problem?&lt;/h2&gt;
+
+&lt;p&gt;It should first be noted that the expansion, affordability and availability of AI tools is such now that even individual departments can easily afford to develop specific implementations.&lt;/p&gt;
+
+&lt;p&gt;As a data scientist, before approaching an algorithm the first thing we should always ask is what kind of dataset we have. If the problem is Classification ( e.g. predicting the likelihood of the group of skills in a resume being a fit for a job opening) the kind of algorithms you would use, would be defined by the kind of dataset you have and the state of that data.&lt;/p&gt;
+
+&lt;p&gt;The next thing you should look at is the business objective of the problem. An objective to understand the “reasons” for a particular problem - like the risk factors causing someone to leave the company - makes it an Inference Problem.
+In the Inference problem the objective is more to understand the relationship between features and the response/dependent variables. In that case one would prefer linear or less complex models since they are interpretable.&lt;/p&gt;
+
+&lt;p&gt;A business objective to focus more on accuracy and a correct prediction score rather than understanding the data, is a Prediction Problem. You then have the luxury to choose algorithms that focus on prediction accuracy. Usually, complex or “black box” models like the ANN will work well for a Prediction Problem. But is is crucial to understand that Interpretability is very low for such models as the focus is on getting an accurate prediction rather than an inference or understanding of the relationships within the data.&lt;/p&gt;
+
+&lt;h2 id=&#34;limitations-of-any-given-model&#34;&gt;Limitations of any given model&lt;/h2&gt;
+
+&lt;p&gt;There is no universal algorithm that works best on all kinds of dataset problems. Because of this, any implementation may need to try multiple algorithms to find which one works well on the specific dataset in question. Because of this, may organizations will simply adopt the largest AI solution that can be easily afforded. The danger in this approach is trusting that the model itself was correctly designed.  Without sufficient design, no AI will be useful.
+Normally it&amp;rsquo;s a good approach to start with simple algorithms ( like logistic regression or other simple linear counterparts) and build on the complexity as you progress.&lt;/p&gt;
+
+&lt;p&gt;In the end, if you are seeking highly accurate prediction without needing to have an explanation, the ANN is ideal. CNN &amp;amp; RNN are deep learning approaches which are best used on text, speech and image data. All Neural Networks are “non-interpretable” models requiring immense computing resources and work best with lots of data to train the weights in the model. Using AI is ideal for a computer vision or NLP task requiring great accuracy, but it is not best for an everyday data science task.&lt;/p&gt;
+
+&lt;h2 id=&#34;takeaways-for-hr&#34;&gt;Takeaways for HR&lt;/h2&gt;
+
+&lt;p&gt;So what does this mean for HR? There are a number of use cases for the implementation of AI in HR. With existing restraints to selection tools, some immediate applications include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Turnover Prediction&lt;/li&gt;
+&lt;li&gt;Fit Prediction&lt;/li&gt;
+&lt;li&gt;Performance Analysis&lt;/li&gt;
+&lt;li&gt;Pay Negotiation or Modeling&lt;/li&gt;
+&lt;li&gt;Recruiting Messaging Personalization&lt;/li&gt;
+&lt;li&gt;Programmatic Recruiting&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vguide-artificial-intelligence-human-resources&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Understanding the Hire, and how it needs to change</title>
+            <link>https://redcell.ai/blog/hire-process/</link>
+            <pubDate>
+                Tue, 28 Nov 2017 00:00:00 +0000
+            </pubDate>
+            
+            <guid>https://redcell.ai/blog/hire-process/</guid>
+            <description>
+                
+
+
+&lt;h1 id=&#34;the-1970-s-called-and-they-want-the-color-of-their-parachute-back&#34;&gt;The 1970’s called and they want the color of their parachute back…&lt;/h1&gt;
+
+&lt;p&gt;From the top I will note that this is not intended to be a thought-piece about Dick Bolles or her eponymous career discovery book, “What color is your parachute?” [first published in 1975] - it is, however, intended to be a bit of a diatribe against “the resume” and the lack of innovation in general in the field of career advisement.&lt;/p&gt;
+
+&lt;p&gt;How is it, that we have nearly arrived at two decades past the year 2000 and are closer to landing a person on Mars than we are to smoothly ensuring the civilian career success of a soldier? - or a graduating student? - or a parent returning to work? - or a technician needing to transition out of an industry that is shutting down?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;How is it that we are still using a Resume as the primary currency of the business transaction that is “the hire?” Surely … somewhere there is a solution to the insanity that is a job search - but everywhere we look, the trends point further away from career and more toward a gig economy of transient tasks stitched together via dated algorithms of what it means to be human in an occupation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What is more amazing to me is the near lack of any meaningful change in the last 50 years - not just in how individuals and companies interact, but in the resources supplied to provide those individuals with insight into how to select a career path they will most enjoy and in which they can succeed. Is our path to success rooted in a psychological profile? Is it best determined by a standardized test? Our we better off with a technical skill assessment? Or are we merely destined to wander along until we manage to strike the right chord or die trying….&lt;/p&gt;
+
+&lt;p&gt;Personally, I’ve been working the issue through my mind for the better part of a decade [which suggests that I may not be the right one to come up with the right answer] - and every once in awhile I find it useful to walk through the process in the hope that some new nugget will reveal itself.&lt;/p&gt;
+
+&lt;p&gt;As it happens, this weekend was one of those moments and so I thought I would share my thoughts with a broader audience as either a means of soliciting greater insight than I can muster on my own … or perhaps as some small cry for help…&lt;/p&gt;
+
+&lt;p&gt;If you are willing to follow-along on this thought excursion, join me first in the perspective of the hiring manager. In my observation, the greatest challenge in selection and management of human capital lies at the transactional level.  Decision-making surrounding a hire, termination, promotion, tasking, reporting, team construction, project assignment, etc. rests on a manager’s or organization’s ability to observe, infer, trust and ultimately make the correct choice.  A myriad of options, products and tools exist to assist in a decision process that often comes down to intuition in the face of what is essentially unknowable complexity.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-hire&#34;&gt;The Hire&lt;/h1&gt;
+
+&lt;p&gt;Using the “hire” as an example, we will consider the various decision points the typical organization navigates to arrive at a staffing decision.  The process generally begins with the recognition of a need for additional staff to perform a variety of functions, some of which are obvious tasks, some of which are not.  Let’s say an organization decides to hire additional sales staff.  Assuming that the organization has hired sales professionals in the past, they may have a “template” to work from, perhaps in the form of a job description.&lt;/p&gt;
+
+&lt;p&gt;The job description typically references a set of requirements and broad achievements that a candidate must have in order to be considered for selection.  When boiled down, the list typically includes: x years of experience with x skills, x level of education, and x certifications.  Beyond that are varying amounts of narrative designed to narrow the field, but which is typically either a template from a professional association or written by someone in the human resources office that is assisting in the management of the process.&lt;/p&gt;
+
+&lt;h2 id=&#34;job-classification&#34;&gt;Job Classification&lt;/h2&gt;
+
+&lt;p&gt;To this point, the job description may be symbolized in a succinct code such as the taxonomy created by the US Department of Labor’s O*Net occupational database and taxonomy.  The DOL O*Net SOC taxonomy classifies occupations by major groups, minor groups, broad occupations, detailed occupations.  Unclassified lists of “competencies” in a text format are further assigned to each SOC classification to create a codified narrative useful for creating job descriptions and establishing job requirements.  Each SOC is defined by Tasks, Tools &amp;amp; Technology, Knowledge, Skills, Abilities, Work Activities and Work Context.  As an example, the code for a Sales Manager is 11-2022.00 and a detailed description of this jobs requirements can be found by clicking here.  Anecdotally, few employers use this system to classify and list jobs as it is admittedly slow to keep up with job requirements and titles.  A significant limitation of this system and taxonomy is a lack of classification structure for assigned knowledge skills and abilities that would permit a more detailed gap analysis for workers and jobs.&lt;/p&gt;
+
+&lt;p&gt;Regardless of how an employer derives their job requirements, the initial job description is generally placed in an online system to which a number of additional screening “questions” may be added to narrow the pool of applicants.  Applicants submit a narrative document known as the “resume,” as evidence of their qualifications.  Resumes, being narrative in nature, have few standards, but can be “parsed” into discrete data fields (generally aligned to those basic requirements listed above).  Additional measures may be added to further filter the pool including electronic and paper forms that require the applicant to rewrite the content of the resume in a format determined by the employer to more easily baseline and compare information presented by the applicant.  At this point, the process typically takes a dramatic turn into the realm of the subjective (eg. the “Interview”).&lt;/p&gt;
+
+&lt;p&gt;A few pieces of relevant information are rarely sufficient to confirm that an individual both has the capabilities to do the work required, and has mastered certain competencies to a sufficient degree to successfully perform the functions of the job on a regular and satisfactory basis.  Thus, any number of additional and invariably more subjective actions come into play ranging from pre-tests, to simulations, to credit checks, drug tests, psychological profiles, peer interviews, background investigations, and the hiring manager interview.  If we are honest, the final selection boils down to the gut feel of the selecting official, whose motivations are inscrutable, but ideally backed by enough objective evidence to avoid running afoul of federal and state regulations.&lt;/p&gt;
+
+&lt;p&gt;From the perspective of the job seeker, the entire process is not only intimidating and confusing, but devaluing of their own perspective of their capabilities, motivations and capacity to perform the requirements of the job.  Worse, a candidate generally has no idea whether they qualify or not for a position.&lt;/p&gt;
+
+&lt;p&gt;Undoubtedly, all parties involved would be better served by a cleaner, clearer system that allows candidates to know if they qualify for a position, and managers to have confidence that their final slate of candidates has the capability to perform the required functions.&lt;/p&gt;
+
+&lt;p&gt;To extend the analogy a step further, the same level of obfuscation exists within the vast majority of decisions surrounding human capital at the transactional level: how does an employer effectively transition and grow effective workers into new roles (promotion), how does an employer efficiently train, retrain and assess changing skill requirements (development), how does an employer assess and compare effectiveness of employees (termination, motivation and retention).&lt;/p&gt;
+
+&lt;p&gt;To begin to address the inefficiencies and high costs associated with worker selection, promotion and development, we have actually developed a more cohesive taxonomy or means of classifying work requirements at the fundamental unit of work, the competency.  To do so, we begin with the definition of competency and create a means by which these competencies can be rapidly assigned, measured, articulated and codified, not only as work requirements, but as metrics and learning objects.&lt;/p&gt;
+
+&lt;h2 id=&#34;classification-of-competencies&#34;&gt;Classification of Competencies&lt;/h2&gt;
+
+&lt;p&gt;To properly classify a set of competencies and thereby create a cohesive taxonomy, it is first necessary to define how the term is being considered and used.  The US Department of Labor developed a Competency system that organizes competencies into nine tiers that fall into three broad categories: Occupation Related, Industry Related, and Foundational Competencies.  Given the industry adoption and level of work that has gone into defining work according to this framework, it does supply a solid framework.  It does not, however, provide a suitable or standard classification system to organize those competencies.  Neither does it address the weighting of competencies, how they are measured and levels of mastery.  Rather, competency is the general term used for a range of skills, abilities, knowledge, and familiarization of the same.&lt;/p&gt;
+
+&lt;p&gt;Such a broad definition deflates the literal sense of the word “competence” which refers to the possession of a required skill knowledge, qualification, or capacity.  In addition to “possession” there is a sense of sufficiency associated with the word that relies upon an assumption that a person who has competence in skill not only possesses the skill, but possesses it in sufficient quality and efficacy as to be able to function in a variety of circumstances.&lt;/p&gt;
+
+&lt;p&gt;It is this sense of competency that interests an employer.  They are not merely interested in whether an individual knows how to do a task, or knows certain information … but how well they can perform the task or recall that information under pressure and a variety of circumstances.  A taxonomy that organizes skills, abilities and knowledge, but provides no differentiation in mastery cannot adequately be considered a competency taxonomy.&lt;/p&gt;
+
+&lt;p&gt;This being said, I recognize the fact that any classification process or system can easily become mired in unnecessary detail, and therefore, it is the purpose of this organization to create a means by which partners can rapidly align occupational needs to the individuals that can best demonstrate the necessary level of competency required. Desiring to create efficiencies rather than further complication, the taxonomy we have begun to embed in our online tools (check out the STEMType and CCFIT tools), while aware of the broader research on the subject of classification of workplace competencies dating back to the early 70’s - we chose to adopt portions of prevalent approaches into a system more amenable to practical application in the workplace.&lt;/p&gt;
+
+&lt;p&gt;To do so, I present the concept of the “job model” as a measure of sets of competencies at defined levels of mastery with a definition of competency reflective of the 1797 latin derivation of competere (also derivative of compete) meaning, “sufficiency of qualification.”&lt;/p&gt;
+
+&lt;h2 id=&#34;the-job-model&#34;&gt;The Job Model&lt;/h2&gt;
+
+&lt;p&gt;As previously discussed, the job description is generally little more than a poor parody of actual job requirements.  Not unlike what is found in our education system, a job description describes job qualifications in terms of time rather than mastery.  Assumed in this model is the notion that an individual bearing a similar job title from a similar sized employer is the individual optimally suited for a given position.  The “qualification by time in grade” concept creates significant barriers for talent development and is more apt to result in underperformance as well as underemployment. [incidentally this is a key point of failure for military in transition] In turn, job candidates are left without a clear means by which they can become qualified.&lt;/p&gt;
+
+&lt;p&gt;In the job model framework, time becomes only one means by which mastery can be demonstrated, but co-equal with more definitive and relevant measures such as proof by examination, demonstration, and certification.  Employers may still select time utilizing a given skill as a measure of maturity or sufficiency, but would be wise to consider more relevant testing mechanisms as supplemental proof of sufficiency of qualification (and skill relevance).&lt;/p&gt;
+
+&lt;h2 id=&#34;classification&#34;&gt;Classification&lt;/h2&gt;
+
+&lt;p&gt;One of the greatest challenges in designing a taxonomy is in the creation of a suitable taxonomy that is flexible, scalable, and ultimately something that can be implemented within various data systems and constraints.  Additionally, we face the question of adoption versus protection.  In a world of open source versus proprietary, both options have their advantages.  Leaving a taxonomy open and free increases the likelihood of adoption, but exposes the creator to obscurity and irrelevance.  Holding tight proprietary restrictions on a model can lead to income through various methods such as licensing and product development, but adoption may be slow and ultimately lead to the death of the model outside of its few implementations.&lt;/p&gt;
+
+&lt;p&gt;Given the complexities involved in the creation of a classification system, and the myriad options available, it makes some sense, even for a proprietary solution, to create linkages from the model to known systems already in wide adoption ie, the U.S. Department of Labor’s O*Net job taxonomy.  At first glance, the O*Net taxonomy appears to be, and is for the most part, a comprehensive solution into which millions of dollars and work-hours have been invested.  Undoubtedly, it is the logical basis from which a viable taxonomy may arise.  The following section outlines the key components of this taxonomy, deficits, and adjustments that need to be made to form the basis of a job model that provides value to the career advisement process.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;O*NET®-SOC (the following section contains whole and partial “quoted material” from documents prepared by the National Center for O*Net Development, December 2010)&lt;br /&gt;
+“The O*NET®-SOC (Occupational Information Network-Standard Occupational Classification) occupational taxonomy is currently operating on revisions instituted in 2010.  [ Given the average length of time between revisions, it is expected that a new revision will be released between 2012 and 2016. The database, however is updated on an annual basis.] The O*NET-SOC 2010 taxonomy includes 1110 occupational titles, 974 of which represent O*NET data-level occupations. Data-level occupations are those for which the O*NET program collects data from job incumbents, occupation experts, and occupational analysts. Data are collected on a wide variety of variables and scales, such as occupational characteristics and worker requirements drawn from the O*NET Content Model &lt;a href=&#34;http://www.onetcenter.org/content.html&#34;&gt;O*Net Link&lt;/a&gt;.
+The O*NET-SOC 2009 taxonomy contained 1102 occupational titles, 965 of which represented O*NET data-level occupations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The structure of the SOC system includes four levels of aggregation: 23 major groups, 96 minor groups, 449 broad occupations and 821 detailed occupations. All SOC occupations are assigned a six-digit code. The first and second digits represent the major group; the third digit represents the minor group; the fourth and fifth digits represent the broad occupation; and the sixth digit represents the detailed occupation. The 23 major groups of the SOC include:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;O*Net Code&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Occupation Group&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;11-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Management Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;13-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Business and Financial Operations Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;15-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Computer and Mathematical Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;17-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Architecture and Engineering Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;19-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Life, Physical, and Social Science Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;21-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Community and Social Services Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;23-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Legal Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;25-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Education, Training, and Library Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;27-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Arts, Design, Entertainment, Sports, and Media Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;29-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Healthcare Practitioners and Technical Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;31-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Healthcare Support Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;33-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Protective Service Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;35-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Food Preparation and Serving Related Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;37-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Building and Grounds Cleaning and Maintenance Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;39-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Personal Care and Service Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;41-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Sales and Related Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;43-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Office and Administrative Support Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;45-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Farming, Fishing, and Forestry Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;47-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Construction and Extraction Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;49-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Installation, Maintenance, and Repair Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;51-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Production Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;53-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Transportation and Material Moving Occupations&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;55-0000&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Military Specific Occupations&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;SOC minor groups, broad occupations, and detailed occupations are assigned codes related to the corresponding major groups. For example:&lt;br /&gt;
+| O*Net Code | Occupation Group |
+| :&amp;mdash;         |     :&amp;mdash;      |&lt;br /&gt;
+|19-0000 |Life, Physical, and Social Science Occupations (SOC major group)
+|19-4000 |Life, Physical and Social Science Technicians (SOC minor group)&lt;br /&gt;
+|19-4050 |Nuclear Technicians (SOC broad occupation) 19-4051 Nuclear Technicians (SOC detailed occupation)|&lt;/p&gt;
+
+&lt;p&gt;In the O*NET-SOC taxonomy, an occupation that is directly adopted from the SOC system is assigned the six-digit SOC code, along with a .00 extension. If directly adopted from the SOC, the SOC title and definition are also used. Hereafter, these are referred to as SOC-level occupations.&lt;/p&gt;
+
+&lt;p&gt;If the O*NET-SOC occupation is more detailed than the original SOC detailed occupation, it is assigned the six-digit SOC code from which it originated, along with a two-digit extension starting with .01, then .02, .03 and so on, depending on the number of detailed O*NET-SOC occupations linked to the particular SOC detailed occupation.&lt;/p&gt;
+
+&lt;p&gt;For example, Nuclear Technicians is a SOC detailed occupation to which two detailed O*NET-SOC occupations are linked. See the occupational codes and titles for this example below.&lt;/p&gt;
+
+&lt;p&gt;19-4051.00 Nuclear Technicians (SOC-level)
+19-4051.01 Nuclear Equipment Operation Technicians
+(detailed O*NET-SOC occupation)
+19-4051.02 Nuclear Monitoring Technicians
+(detailed O*NET-SOC occupation)&lt;/p&gt;
+
+&lt;p&gt;Both 19-4051.01 Nuclear Equipment Operation Technicians and 19-4051.02 Nuclear Monitoring Technicians are data-level occupations in the taxonomy. Data-level occupations are those for which the O*NET program collects data from job incumbents, occupational experts, and occupational analysts on a wide variety of variables and scales, such as occupational characteristics and worker requirements drawn from the &lt;a href=&#34;http://www.onetcenter.org/content.html&#34;&gt;O*NET Content Model&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the example above, the two detailed O*NET-SOC occupations, 19-4051.01 Nuclear Equipment Operation Technicians and 19-4051.02 Nuclear Monitoring Technicians, are data- level occupations, whereas the SOC detailed occupation, 19-4051.00 Nuclear Technicians, is not an O*NET data-level occupation. “&lt;/p&gt;
+
+&lt;h1 id=&#34;use-of-the-o-net-soc&#34;&gt;Use of the O*Net SOC&lt;/h1&gt;
+
+&lt;p&gt;As a taxonomy of occupation titles and groupings, the O*Net SOC provides a solid framework that is not only supported and used within the government (for recruiting and classification), but mandated to some extent as the reporting structure for compliance initiatives within the Department of Labor.  Given the number of federal contractors and scope of compliance and regulatory authority, any model system will at some point require a cross-walk as a minimum when used in practice.  As a practical tool for job seekers, this taxonomy leaves much to be desired. For instance, of the 1110 detailed job classification titles, 136 have no data associated with them being either too specific, marginal or “residual” in nature.  Functionally, having 136 titles unrelated to data causes issues within a system of operation.  Additionally, the numbering system lacks sufficient scalability to address job changes and increasing specificity that continues to creep into the marketplace.&lt;/p&gt;
+
+&lt;p&gt;Fundamentally, the O*Net SOC provides a sound foundation upon which a taxonomy may be constructed for defining and organizing job categories and to some extent job titles.  Additional layers of complexity arise, however as the full O*Net Content Model is unveiled.&lt;/p&gt;
+
+&lt;h2 id=&#34;o-net-content-model&#34;&gt;O*Net Content Model&lt;/h2&gt;
+
+&lt;p&gt;The Content Model is both the conceptual foundation of O*Net, and the framework by which detail is associated with job titles.  The Content Model is divided along a central axis that splits data sets between worker orientation and job-orientation.  Worker orientation characteristics and requirements include generalized abilities, interests, values, styles, skills, knowledge, education, experience, training, licensing and entry requirements.  This content recognizes the vast majority of information that comes into play in the typical hiring and selection process.  The flip-side of the model, “job-oriented” characteristics and requirements focuses on occupational, workforce and occupation-specific tasks, tools, technology, trends, and projections coupled with statements of work activities, work and organizational context.&lt;/p&gt;
+
+&lt;p&gt;By dividing classification between worker-oriented and job-oriented, the O*Net system identifies tacitly the key challenge in HR transactions:  the gap between worker needs, attributes and interests, and actual job requirements.  The challenge in HR transactions (especially hire and promotion) is to match optimal “worker-characteristics” with occupational requirements. A useful job model must be capable of creating associations between these two tensions.  The second “division” of characteristics in the O*Net Content Model rests between what is termed as “Cross-Occupation” requirements and “Occupation-Specific” requirements.  Worker Characteristics and Occupational Requirements align with the Cross-Occupation threshold, while “Experience Requirements” and “Occupation-Specific” information balance the Occupation Specific orientation.  In the visual model, O*Net adds “Worker Requirements” and “Workforce Characteristics” to create a central axis.&lt;/p&gt;
+
+&lt;h2 id=&#34;demystifying-the-o-net-content-model&#34;&gt;Demystifying the O*Net Content Model&lt;/h2&gt;
+
+&lt;p&gt;The greatest barrier to wide commercial adoption of the O*Net model is its complexity, and the lack of ability to appropriately align the measurable worker characteristics with identifiable occupational requirements.  The issue in creating efficiencies within the transactional process is finding an effective balance between detail and simplicity.   Job descriptions or definitions that are too simple attract too many applicants and create administrative and regulatory nightmares for the business, while frustrating job seekers who become lost in a pile of resumes.  Too much detail leads to few candidates and the possibility of no qualified candidates, creating vacancies in critical business functions.&lt;/p&gt;
+
+&lt;p&gt;This model also provides limited insight into how competencies combine to facilitate the translation of competencies across job types and industries. At its core, the O*Net model is mechanistic in its approach to defining occupational requirements.&lt;/p&gt;
+
+&lt;p&gt;Reviewing the detailed taxonomy created for the O*Net Content Model, it becomes apparent that the content is structured in the form of a simple outline: [ #.A.#.a.# ].  Each of the six categories is described as an Element and assigned an Element ID, with the heading element given a single Numeric to begin numbering from 1 - 6 as follows:  1 Worker Characteristics;  2 Worker Requirements;  3 Experience Requirements; 4 Occupational Requirements;  Occupation-Specific Information; and 6 Workforce Characteristics.   The final two have little specificity at all suggesting that either the available content is incomplete, or someone just got tired and decided to stop creating classification titles and descriptions after 4.&lt;/p&gt;
+
+&lt;p&gt;Only one of the six Elements has additional associated content formatted with an ID code:  Element 4 associates each Element ID with “General Work Activities (GWA)” and “Detailed Work Activities (DWA).”  Interestingly, the logical relationships created through the mapped classifications provide a useful foundation for addressing the critical gaps in the system, and a rudimentary structure for a simple but usable competency taxonomy.  Unfortunately, the numbering system utilized is rife with issues due to its paper-based nomenclature.  When adjusted, however, the possibilities for a viable decision framework become apparent.&lt;/p&gt;
+
+&lt;h1 id=&#34;understanding-fit&#34;&gt;Understanding Fit&lt;/h1&gt;
+
+&lt;p&gt;So how do we effectively create a structure that opens the doors of possibility for a functional taxonomy to address the inherent complexities and inefficiencies of HR transactions, most notably the Hire?  And how do we link such a structure to requisite training content to establish a pathway by which an individual can move from any present state to any future state? The Department of Education developed a classification system in 1980 to address the variance between degree and academic program offerings.  This structure is known as the Classification of Instructional Programs (CIP).  According to DoE, the CIP is described as follows, “The Classification of Instructional Programs (CIP) provides a taxonomic scheme that supports the accurate tracking and reporting of fields of study and program completions activity. CIP was originally developed by the U.S. Department of Education&amp;rsquo;s National Center for Education Statistics (NCES) in 1980, with revisions occurring in 1985, 1990, and 2000. For information about these early revisions to the CIP, click here or access specific links to historical versions from the resources page. For information about versions after CIP 2000, click the &amp;lsquo;change year&amp;rsquo; link on this site to see the available versions.”&lt;/p&gt;
+
+&lt;p&gt;A cross walk between the O*NET database and CIP database is readily available, though linkages occur only at the SOC level and not deeper within the competency framework.  In order to develop a system that would link to both of these national standards, while allowing for near infinite expansion, a new code - one beyond the existing structure must be developed - and I would submit must be open-source. At the heart of the STEM Type and CCFIT model (and indeed within the newest iterations of our Military Friendly surveys) lies the basis of this newly envisioned taxonomy structure along with an interactive framework that allows for complete customization of the linkages to permit continuous improvement in the quality of the matching algorithm and competency linkages as the system is used over time.&lt;/p&gt;
+
+&lt;p&gt;For those of you interested in partnering in this journey  - a journey I hope will lead to the birth of a new understanding of career opportunities I, as always, invite thoughts, insights and comments!&lt;/p&gt;
+
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vhire-process&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Texting has paved the way to AI in HR</title>
+            <link>https://redcell.ai/blog/texting-artificial-intelligence-human-resources/</link>
+            <pubDate>
+                Wed, 15 Nov 2017 10:17:00 -0700
+            </pubDate>
+            
+            <guid>https://redcell.ai/blog/texting-artificial-intelligence-human-resources/</guid>
+            <description>
+                
+
+
+&lt;h1 id=&#34;texting-has-paved-the-way-for-artificial-intelligence-and-hr-should-get-on-board&#34;&gt;Texting has paved the way for artificial intelligence, and HR should get on board.&lt;/h1&gt;
+
+&lt;p&gt;Texting isn’t new by any stretch of the imagination. As a communication medium that has been around for more than 20 years, it has just begun to hit its stride in the past few years. Widespread, generally free, real-time and with incredible reach, texting and messaging has become a central component if not a driving force in human interaction.&lt;/p&gt;
+
+&lt;p&gt;But the real question … do you really know who or what you are talking to? The separation between human communication and the familiarity and trust placed on what is effectively anonymous written communication has narrowed to the point that conditions are now ideal for the introduction and mass adoption of artificial intelligence driven digital communications.&lt;/p&gt;
+
+&lt;h2 id=&#34;texting-is-pervasive&#34;&gt;Texting is pervasive.&lt;/h2&gt;
+
+&lt;p&gt;97% of americans text or message at least once a day &lt;a href=&#34;http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015/&#34;&gt;Pew Research Center&lt;/a&gt; while people worldwide will send 8.3 Trillion messages this year … nearly 16 million messages per minute, making it the most common cell phone activity by far. 55% of heavy text message users (50+ per day) would rather receive a text than a phone call &lt;a href=&#34;http://www.pewinternet.org/2011/09/19/americans-and-text-messaging/&#34;&gt;Pew Research Center&lt;/a&gt;.  In all of this, how easy is it really to differentiate between a human and machine at the other end of the conversation? In five years or less, you may not be able to tell the difference.&lt;/p&gt;
+
+&lt;p&gt;Similarly, the candidate callback program is nothing new. With the growth of technology, candidate callbacks began to first decline in the mid ‘90’s, despite evidence of their efficacy. The reason? Volume. With the advent of internet and digital applications, it is simply unreasonable to call all candidates back, even after an interview and especially if they are not selected.  Or is it?&lt;/p&gt;
+
+&lt;p&gt;The majority of callback programs are vehemently disliked by the recruiting staff … regardless of what they may claim in team discussions. But let&amp;rsquo;s have a look at the numbers. In the U.S. we ended 2017 with around 5.5 million hires per month and 5.2 million separations. &lt;a href=&#34;https://www.bls.gov/news.release/pdf/jolts.pdf&#34;&gt;Read the Labor Report&lt;/a&gt; We&amp;rsquo;ll use Glassdoor&amp;rsquo;s 250 resumes per job average as well as their estimation that only 2% are called in for an interview. Those number suggest that there every month there are about 1.375 Billion applications submitted (people obviously apply to more than one job). Of those, around 275 Million are invited for an interview and 5.5 Million are hired.&lt;/p&gt;
+
+&lt;p&gt;If we translate that for the average midsize company that hires say 1,000 employees per year, with a team of 5 recruiters, that equals around 5 hours per workday of call time if you were to reach back out to just the applicants that interviewed.&lt;/p&gt;
+
+&lt;p&gt;So this brings us to the first role of artificial intelligence in HR. Much of current discusison around AI in HR is focused on selection … but few hiring managers appear to be ready to embrace AI in their talent selection process, given some of the unknowns regarding selection bias and regulatory oversight. Candidate callbacks, then become a prime avenue for both improved outcomes and cost savings. In the emerging era of value-based service, this is the kind of use-case for which HR professionals have been searching.&lt;/p&gt;
+
+&lt;p&gt;And the world is ready for it.&lt;/p&gt;
+
+&lt;h2 id=&#34;people-are-tuning-in-to-communications-technologies-at-an-ever-expanding-level&#34;&gt;People are tuning in to communications technologies at an ever-expanding level.&lt;/h2&gt;
+
+&lt;p&gt;Some recent indicators:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nearly 20 million of the 225 million Twitter users follow 60 or more Twitter accounts and nearly 2 million follow more than 500 accounts.&lt;/li&gt;
+&lt;li&gt;There are more than 800 million people now signed up for the social network Facebook; they spend 700 billion minutes using Facebook each month, and they install more than 20 million apps every day.&lt;/li&gt;
+&lt;li&gt;Facebook users had uploaded more than 100 billion photos by mid-2011.&lt;/li&gt;
+&lt;li&gt;YouTube users upload 60 hours of video per minute and they triggered more than 1 trillion playbacks in 2011 – roughly 140 video views per person on earth.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What if we tap into the power of texting … mobile communication and AI … to bring efficacy to applicant and candidate communications. We have at our disposal, not just messaging, but video, voice, alerts, prompts, vibrations … and so much more … all customizable for a specific candidate at a specific time, location and for a specific purpose. AI driven communications do not need to be inhuman at all, rather, AI techniques provide an opportunity to enhance HR communications both before and after the hire.&lt;/p&gt;
+
+&lt;p&gt;Undoubtedly, regulation has slowed the adoption of social strategies in HR, but more than federal and state regulation is a simpler lack of understanding of mobile communication options. Opt-ins, alerts, and push notifications are common functions of messaging applications, as is anonymity and data security. Notifications, prompts or even targeted communications can take advantage of peer to peer (device to device) communications or be delivered without revealing sensitive information about the candidate, and delivered only to the party directed.&lt;/p&gt;
+
+&lt;p&gt;The challenge has been implementing these types of solutions at scale and with a high degree of customization and responsiveness. Programmatic solutions combined with deep learning techniques provide powerful options for recruites and HR to stay and get back in touch via the mobile world.&lt;/p&gt;
+
+&lt;h2 id=&#34;you-re-probably-missing-huge-amounts-of-meaningful-and-available-data&#34;&gt;You&amp;rsquo;re probably missing huge amounts of meaningful and available data&lt;/h2&gt;
+
+&lt;p&gt;Behind the huge volume of HR-relevant information available online sits an even broader data pool. Piecing together the different sites a candidate is visiting combined (including the company&amp;rsquo;s website) with offline data (like the application), as well as demographic and geographic details, can present a far richer picture for recruiters in terms of what information an individual candidate might find most useful at each stage during their recruiting and onboarding journey. As an efficient technology, programmatic has proved itself adept at translating data from multiple sources into actionable insights, getting the right info to the right individual more quickly, while maintaining appropriate levels of privacy.&lt;/p&gt;
+
+&lt;p&gt;While the benefits of programmatic advertising in recruiting are becoming clearer, the issue of maintaining regulatory compliance remains all-important.&lt;/p&gt;
+
+&lt;p&gt;There are longstanding Labor guidelines in place that digital marketers must observe in all recruiting engagement. However, the Network Advertising Initiative went further on programmatic, issuing specific guidance to help advertisers succeed in this environment. This includes a usage and consent framework for data derived from sensitive sources, as well as all other data sources, including data collected by publishers.&lt;/p&gt;
+
+&lt;h2 id=&#34;we-can-augment-your-efforts-to-get-you-up-to-speed-quickly&#34;&gt;We can Augment your efforts to get you up to speed quickly&lt;/h2&gt;
+
+&lt;p&gt;Our process is simple from an execution standpoint. We partner with recruiters and HR professionals to craft and execute communication &amp;ldquo;prescriptions&amp;rdquo;. Candidate agreement is obtained up-front, along with their preferred contact methods, frequency and restrictions. These prescribed conversations can begin as soon as the candidate leaves the website, or be tied to events such as the interview and can include a vast variety of alerts, notices and communications across platforms to optimize applicant nurturing and talent management, and to facilitate eventual onboarding, or an ongoing relationship for when a suitable job is open.&lt;/p&gt;
+
+&lt;p&gt;Modern marketing technologies have never been a more powerful support for human resources, and with careful management, can help cut through the clutter of bad data and improve candidate and employee engagement.&lt;/p&gt;
+
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vtexting-artificial-intelligence-human-resources&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Our AI wrote an article for military job seekers.</title>
+            <link>https://redcell.ai/blog/article-artificial-intelligence/</link>
+            <pubDate>
+                Sat, 21 Oct 2017 22:01:22 -0700
+            </pubDate>
+            
+            <guid>https://redcell.ai/blog/article-artificial-intelligence/</guid>
+            <description>
+                
+
+
+&lt;h1 id=&#34;we-fed-15-years-of-gi-jobs-magazine-articles-to-our-artificial-intelligence-and-it-wrote-an-article-just-for-you&#34;&gt;We fed 15 years of GI Jobs Magazine articles to our artificial intelligence and it wrote an article just for you:&lt;/h1&gt;
+
+&lt;p&gt;You’ve undoubtedly been reading a great deal about the rise of Artificial Intelligence, and admittedly, what we’ve done here is nothing particularly new or novel, but the results are interesting depending on how deep you want to read into the potential meaning of the text.&lt;/p&gt;
+
+&lt;p&gt;A couple of the technical specs for those that are interested:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Total Sentences:  1,170,479
+Iterations: 35
+Epochs per iteration: 3-10
+Language: Python
+ML Libraries: Tensorflow, Keras
+Hours of Training: 53+ (yeah we just used our local machines)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;a-few-thoughts-about-the-results&#34;&gt;A few thoughts about the results:&lt;/h2&gt;
+
+&lt;p&gt;Humans don’t start their thinking from scratch every second. As you read this article, you understand each word based on your understanding of previous words. You don’t throw everything away and start thinking from scratch again. Your thoughts have persistence.&lt;/p&gt;
+
+&lt;p&gt;Traditional neural networks can’t do this, and it seems like a major shortcoming. For example, imagine you want to classify what kind of event is happening at every point in a movie. It’s unclear how a traditional neural network could use its reasoning about previous events in the film to inform later ones.&lt;/p&gt;
+
+&lt;p&gt;Recurrent neural networks (RNN) address this issue. They are networks with loops in them, allowing information to persist. RNNs have been used to address a variety of problems: speech recognition, language modeling, translation, image captioning … and yes even article writing like we’ve done here.&lt;/p&gt;
+
+&lt;p&gt;Essential to these successes is the use of Long Short Term Memory (LSTM) networks which are a very special kind of recurrent neural network that work, for many tasks, much better than the standard RNNs. Almost all exciting results based on recurrent neural networks are achieved with them.&lt;/p&gt;
+
+&lt;p&gt;To generate any kind of meaningful text takes a large volume of data, considerable tuning, and much more computing time than we expected (hello 48 hour computations?!). The results, in addition to some really insightful sentences, provide some interesting insights into a 15 year dialogue with military transitioners regarding their transition. A few prompts as you read the passage generated by our AI:&lt;/p&gt;
+
+&lt;p&gt;What do you think of the choice of title and subtitle?
+What connections are made between schools, companies and military commands?
+The AI created a couple of words, any thoughts about their meaning?
+In the end, the AI suggests a link to a post, but did not supply one =(  - So we added our own post from one of our sponsors.&lt;/p&gt;
+
+&lt;p&gt;Without further ado …. Enjoy the article, and if you’d like to talk to our AI, Gunny Jobs is available on Facebook Messenger and Twitter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-------
+-------
+
+# Cyber Security Is In Huge Demand
+
+&amp;gt; programs looking for military experience and getting the most out of providing the military opportunity. 
+
+Services for veterans, are hot, and I don’t see an end to the value a small support has to a feeling your service to a nation matters to the company and what was served for provides the support and experience in the marketing and similar terms that are used on the resume. The company can see your work in the working to be four weekends of work to be considerable amount of research and of waits before you get to their program. Businesses understand that maybe you worked too many considerations for a position and the first interview and are seeking better ways when you can engage to make it happen.
+
+We should make the student the corporation and every recruiter with a life perspective that covers the entire military experience. But whether they find the time for a program in the company or have the experience to contract a resume service or contract to a school a way of considering a person, because they seem to consider the battles of the military candidate.  Great successful may be found in contracts between the campus and the company to find a time to consider the application esuaration with which you ensure employment.
+
+That promise was expanded to include the resume to the transition and to filling any competing gaps between the community and the company in a few states. The same collaboration is needed to address the stressful change to employment between leadership in the company and the commanders. The make transition to community possible is a position for advisors to maintaining a personal good, or to get the company promoted. You are in the company and the company in the students allows the military friendly community to franchise your veteran stepnation to check your strategy and support.
+
+After receiving your information, these verbal fields are easy to battle owners of the military experience record. What you have done to assist the job fit needs to enlarge in the pertations and to the financial benefit of the military student. Once the veteran student starts to receive the most stailory step to the promise of careers, they make a want to a company for computer interns. On close of the post is the program with the student performance that requirements can work to a career and a program and you don’t have stop your term of military service.
+
+
+-------
+-------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;a-possible-interpretation&#34;&gt;A possible interpretation&lt;/h2&gt;
+
+&lt;p&gt;Those of you reading this, may have your own take on what is being said. Having spent a number of years in ancient language translation, I somehow feel uniquely qualified to offer a summary. Here’s my thoughts of each paragraph … we would love to hear yours:&lt;/p&gt;
+
+&lt;p&gt;Programs for veteran transition are popular because companies realize that veterans are spending far too much time trying to figure out how they fit into civilian jobs. Many companies are trying to find a solution that works.
+What we should do, is flip the script and train companies and recruiters on what military experience really means. But companies likely don’t have the time or interest to invest in training or outsourcing reliable and effective services … even though they are quick to recognize that veterans may be affected by combat experience.&lt;/p&gt;
+
+&lt;p&gt;One solution is for Colleges and Companies to partner to ensure that military transition leads to employment.&lt;/p&gt;
+
+&lt;p&gt;This partnership needs to expand to include resume translation support and to identify gaps that may exist between what a company offers and what it’s surrounding community offers. (ie. the community is potentially as important as the job in ensuring a successful transition)&lt;/p&gt;
+
+&lt;p&gt;The same type of collaboration (between companies and schools) is needed between companies and military commands, especially because advisors often have competing agendas: doing what is best for the individual or best for the company PR goals.
+Communities with best practices should be “franchised” to replicate their success.
+Verbal interviews are important in addressing bias against mis-understandings of military experience. Skills gained in military service should have more weight in determining civilian pay. Once veteran students understand their fit, they can take positive steps toward high demand careers and they begin to realize the value of internships.&lt;/p&gt;
+
+&lt;p&gt;Optimal opportunities would allow the service member to begin their transition while in the military.&lt;/p&gt;
+
+&lt;p&gt;I’d love to see your interpretation … is the AI on the right track?&lt;/p&gt;
+
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/varticle-artificial-intelligence&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+        <item>
+            <title>Why we built the first AI for military in transition</title>
+            <link>https://redcell.ai/blog/first-ai-job-search/</link>
+            <pubDate>
+                Tue, 19 Sep 2017 22:01:22 -0700
+            </pubDate>
+            
+            <guid>https://redcell.ai/blog/first-ai-job-search/</guid>
+            <description>
+                
+
+
+&lt;h1 id=&#34;why-we-built-the-first-a-i-for-military-in-transition&#34;&gt;Why we built the first A.I. for military in transition&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/gunnyjobs/&#34;&gt;Talk to Gunny Jobs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;#FillTheTrough&lt;/p&gt;
+
+&lt;p&gt;There are more than 42,000 non-profits with a military and veteran community focus, more than 14,000 OJT programs and 36,000 education programs in total eligible to receive GI Bill funds. Military Transition Assistance Programs (TAP) are mandatory for transitioning veterans. None of this takes into account the millions of individuals investing personally in assisting veterans during their transition to civilian life.&lt;/p&gt;
+
+&lt;p&gt;The result: a record-low unemployment rate of 5.1 percent for Post-911 veterans in 2016 … a drop from the 2011 high of 12.1 percent.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;So …. Mission accomplished!?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Perhaps not so much. Lagging indicators suggest that employment satisfaction is a considerable issue, with 44 percent of veterans leaving their new civilian job within the first year. While a number of research studies suggest that veterans eventually earn more than their non-veteran peers there is a recognized lag of time before this the case. That is, there appears to be a period of time between immediate exit from military service and the point at which veterans begin to exceed their non-veteran peers in term of civilian earnings. Newer research is only now emerging on Post-911 veterans, but seems to reinforce these findings.&lt;/p&gt;
+
+&lt;p&gt;Let’s call it the Trough of Veteran Income Inequality and Dissatisfaction. The Chaplain in me suggests perhaps the “slough of despond” as an equally apt term, but that will only lead to unintended allegory. So I’ll stick with a very DoD acronym: TVIID or perhaps simply, “The Trough.”&lt;/p&gt;
+
+&lt;p&gt;As a transitioning veteran research suggests that you’ve likely found yourself in “The Trough” upon exiting military service: making less than you did or disillusioned by the role you’re in, or both. Research also suggests that this trough not only exists today, but is pretty much a standard economic structure of the military transition experience.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;One would think that with millions of people and more than 80,000 programs dedicated to veteran success in civilian life that we would have solved this issue by new … or at least started to fill in the trough. There’s a catchy hashtag #FillTheTrough! But I digress as we were talking about A.I.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For a number of years, we’ve had this dream of connecting military in transition with people like them … those that followed similar career paths in the hope that this sort of connection would lead to an escape velocity that would speed veterans toward civilian success and avoid “The Trough.” Mathematically and logically, this doesn’t really play out as logic is about the study of consequence and mathematics is really about proving general statements. In other words, you can’t prove a general assertion from a single observation.  What you can do is capture a preponderance of specific observations together to derive a general principle, from which you can make a logical statement.&lt;/p&gt;
+
+&lt;p&gt;More simply put:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[NOT VALID]  A recently separated infantry soldier tells an active duty soldier of the same rank that they love shoveling dirt … therefore all infantry will love shoveling dirt. [NOT VALID]
+
+[VALID] Ten million separated infantry soldiers enjoy shoveling dirt after transition… therefore other infantry will enjoy shoveling dirt after separation. [VALID]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This example, of course, is purely fictional&amp;hellip; as we all know that infantry don’t enjoy anything.&lt;/p&gt;
+
+&lt;p&gt;It does highlight the challenges of the vast majority of 1:1 programs and mentoring initiatives, and even the challenge TAP facilitators face.  One person’s experience … even ten million experiences&amp;hellip; don’t address the tens of thousands of viable options that may exist, and one person’s personal experiences may not be a fit at all.&lt;/p&gt;
+
+&lt;p&gt;Enter artificial intelligence. Artificial intelligence is fairly simple conceptually, but brutally challenging mathematically. A neural network, or deep learning algorithm takes an input, processes that through a number of “hidden layer” calculations and produces an output. This is illustrated by the chart below of a proposed design for a facial recognition algorithm.&lt;/p&gt;
+
+&lt;p&gt;Recent advances in both open source and affordable A.I. platforms has opened the door wide to the use of deep learning for a number of applications. Over the past few years, we have developed connections between the input - military occupation and the output - satisfaction in a given civilian career.&lt;/p&gt;
+
+&lt;p&gt;Yes, pretty cool … but we’re still a long way from something that is truly predictive. What we lack is training … or basically … more data in the model to generate more accurate outcomes. While building this network out, we thought about different options for the human interface and decided to stick with the A.I. motif by designing a chatbot interface that could process natural language.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Enter Gunny Jobs&lt;/em&gt;. Gunny’s current knowledge set includes:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;8,564 military occupations including their codes and titles. 
+1105 civilian occupations with their occupational codes and an average of 30 alternatives
+2318 Majors and Curriculum Codes
+Military Pay Rates and Ranks
+Military Branches
+A smattering of snarky conversation
+Natural Language Processing
+Cool hidden features that you may never find
+Many more features to come
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;His feature set, however, is still very nascent. Currently Gunny can chat [there are lots of hidden easter eggs in his conversational repertoire], Gunny plays a simple military occupation (MOS) guessing game that takes in new inputs. (who knows where vets will take that one), and he can perform a job search based on your MOS. So we’re nowhere near the predictive capabilities that we’re developing, but as it was suggested to a colleague … “you couldn’t talk when you were a day old … so Gunny’s already ahead of you!”&lt;/p&gt;
+
+&lt;p&gt;With so much choice … so many options … veterans generally fall into “The Trough” because of the lack of real decision support tools that deliver meaningful results based on data. Eventually, we hope that Gunny Jobs can help address some of the gap … perhaps fill in a bit of the The Trough by consuming those millions of data inputs and over time delivering smarter outputs and recommendations. We’ve been collecting inputs on veteran employee and student satisfaction in their jobs and their majors for over a year now. While the progress is slow, we intend to integrate that data collection effort directly into Gunny Jobs.&lt;/p&gt;
+
+&lt;p&gt;The beauty is that this technology is capable of not only integrating with Facebook Messenger as it already does, but also with the Google Assistant, Alexa, Cortana, Slack, Line, Skype, Vibe and numerous other platforms where servicemembers are. As artificial intelligence, Gunny Jobs does not sleep, his cloud-based core is always available … and he’s even available to augment the work of the millions of people who interact.&lt;/p&gt;
+
+&lt;p&gt;We don’t intend for Gunny Jobs to replace transition staff … rather we hope that the collective voice of veterans will begin to compile a highly meaningful tool to #FillTheTrough for veterans in transition.&lt;/p&gt;
+
+&lt;p&gt;If you want to find Gunny Jobs:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Start a conversation with Gunny Jobs on Facebook Messenger.
+Start a conversation with Gunny Jobs on Twitter @GunnyJobs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Very soon you’ll also be able ask the google assistant: “Hey Google, Talk to Gunny Jobs.”&lt;/p&gt;
+
+&lt;p&gt;#FillTheTrough&lt;/p&gt;
+
+
+&lt;p class=&#34;center&#34;&gt;
+  
+  &lt;a href=&#34;https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d&#34; class=&#34;button __download-link&#34;&gt;Download&lt;/a&gt;
+
+  &amp;nbsp;
+  &lt;a href=&#34;https://github.com/getinsomnia/insomnia/releases/vfirst-ai-job-search&#34;
+     class=&#34;button button--no-outline&#34;
+     target=&#34;_blank&#34;&gt;
+    View on GitHub
+  &lt;/a&gt;
+  
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+            </description>
+        </item>
+        
+    </channel>
+</rss>

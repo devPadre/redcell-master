@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>
+    Eliminating Bias and Google&#39;s Jobs API |
+    Redcell Talent Accelerator
+  </title>
+  <meta name="author" content="">
+  <meta name="description"
+        content="Powerful talent accelerator delivering improved ROI to clients through cookie management, environment variables, code generation, and authentication for Mac, Window, and Linux">
+  <meta name="generator" content="Hugo 0.34" />
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Redcell Talent Accelerator",
+        "url": "https://redcell.ai/"
+    }
+
+
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://redcell.ai/",
+      "logo": "https://redcell.ai/images/icon.png",
+      "name": "Redcell Talent Accelerator",
+      "sameAs": [
+        "https://twitter.com/",
+        "https://plus.google.com/+"
+      ]
+    }
+
+
+
+  </script>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@"/>
+  <meta name="twitter:title" content="Eliminating Bias and Google&#39;s Jobs API"/>
+  <meta name="twitter:description"
+        content="Google just launched their Cloud Jobs API - but will it be biased against military job seekers?  “At the heart of Cloud Jobs API, there are two main proprietary ontologies that encode knowledge about occupations and skills, as well as relational models between these ontologies… The occupational ontology, an enhanced evolution of O*NET Standard Occupational Classification…”
+ We’ve recently applied to take part in the beta release of the Google Cloud Jobs API and while we await response from google I read the line above with great interest and a little bit of trepidation."/>
+  <meta name="twitter:image"
+        content="https://redcell.ai/images/twitter-card-icon.png"/>
+  
+  <meta property="og:url" content="https://redcell.ai/blog/google-job-api-bias/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Eliminating Bias and Google&#39;s Jobs API"/>
+  <meta property="og:description"
+        content="Google just launched their Cloud Jobs API - but will it be biased against military job seekers?  “At the heart of Cloud Jobs API, there are two main proprietary ontologies that encode knowledge about occupations and skills, as well as relational models between these ontologies… The occupational ontology, an enhanced evolution of O*NET Standard Occupational Classification…”
+ We’ve recently applied to take part in the beta release of the Google Cloud Jobs API and while we await response from google I read the line above with great interest and a little bit of trepidation."/>
+  <meta property="og:image" content="https://redcell.ai/images/twitter-card-icon.png"/>
+  
+  
+
+  
+<script>
+  (function () {
+    var disableGA = window.localStorage['disableGA'] ||
+      window.location.hostname === 'localhost';
+
+    var s = window.location.search;
+    if (s.indexOf('state=') >= 0 && s.indexOf('code=') >= 0) {
+      
+      disableGA = true;
+    }
+
+    if (!disableGA) {
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-113582687-1', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview');
+    } else {
+      console.log('-- Google Analytics Disabled for ' + window.location.hostname + ' --');
+      window.ga = function () {
+        console.log('GA', arguments);
+      };
+    }
+  })();
+</script>
+  
+
+  
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://redcell.ai/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://redcell.ai/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://redcell.ai/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://redcell.ai/images/favicon/manifest.json">
+  <link rel="mask-icon" href="https://redcell.ai/images/favicon/safari-pinned-tab.svg" color="#584dbc">
+  <link rel="shortcut icon" href="https://redcell.ai/images/favicon/favicon.ico">
+  <meta name="msapplication-config" content="https://redcell.ai/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<link rel="manifest" href="/manifest.json">
+
+  
+  <link rel="stylesheet" href="https://redcell.ai/css/simple-grid.min.css">
+  <link rel="stylesheet" href="https://redcell.ai/css/base.css">
+  
+  <link rel="stylesheet" href="https://redcell.ai/css/main.css">
+  
+
+</head>
+
+<body class="template-blog">
+
+
+<script src="https://use.fontawesome.com/93839bed07.js" async></script>
+
+
+<div>
+<nav class="navbar navbar-fixed-top navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <div class="row">
+        <div class="col-12 navbar__container navbar-expand-lg">
+            
+        <a href="https://redcell.ai/" class="navbar__icon">
+          <img src="/images/icon-small.png" alt="Redcell icon image">
+        </a>
+        <a href="https://redcell.ai/" class="navbar__title">
+          <h1></h1>
+        </a>
+
+        
+
+        <ul class="navbar__items">
+          
+          <li data-menu-item="blog">
+            
+            <a href="/blog/">Blog</a>
+            
+          </li>
+          
+          <li data-menu-item="download">
+            
+            <div>
+              <a href="/support/" class="button">Learn More</a>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  if (localStorage && localStorage.currentSessionId) {
+    document.body.setAttribute('data-logged-in', 'yes');
+  } else {
+    document.body.setAttribute('data-logged-in', 'no');
+  }
+</script>
+
+
+<main role="main">
+  <article>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Eliminating Bias and Google&#39;s Jobs API</h1>
+            
+            <div class="meta">
+              
+              <time datetime='September 28, 2017'>
+                September 28, 2017
+              </time>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+
+
+    <section class="content container">
+      <div class="row">
+        <div class="col-12">
+          
+
+<h1 id="google-just-launched-their-cloud-jobs-api-but-will-it-be-biased-against-military-job-seekers">Google just launched their Cloud Jobs API - but will it be biased against military job seekers?</h1>
+
+<blockquote>
+<p>“At the heart of Cloud Jobs API, there are two main proprietary ontologies that encode knowledge about occupations and skills, as well as relational models between these ontologies… The occupational ontology, an enhanced evolution of O*NET Standard Occupational Classification…”</p>
+</blockquote>
+
+<p>We’ve recently applied to take part in the beta release of the Google Cloud Jobs API and while we await response from google I read the line above with great interest and a little bit of trepidation. Why the hesitance you ask? Admittedly, I’m a fan of google cloud services and products - I’ve developed apps on top of firebase, Gunny Jobs is built on Google’s DialogFlow NLP interface, and most recently I’ve been building predictive AI models to help military transition to civilian jobs based with Google’s Tensorflow and Machine Learning engine.</p>
+
+<p>I’m hesitant because I’ve worked with the O*Net model for years and believe very strongly that it is highly biased against military skills … and it does a very poor job of helping military translate their skills to civilian life and jobs.</p>
+
+<p>That being said, I recognize that Google (according to their very limited public documentation) is primarily using O*Net as an occupation ontology (a set of categories), net necessarily as a skill ontology. The genesis of their skill ontology is more opaque, “The skill ontology defines and organizes around 50,000 hard and soft skills with different types of relationships such as is_a, related_to, etc.” In Google’s model, occupations are grouped by the similarity of their skill distributions. All of this makes perfect sense.  A person’s employability is shaped by their ability to perform specific skills at a specified level of competence.  For a more indepth diatribe on the topic, feel free to read one or several of my earlier essays on the topic.</p>
+
+<p>I freely embrace the concept of viewing a job applicant according to a set of competencies (skills proven at a specific level of ability) … comparing this set of competencies to that of a job listing and identifying fit. I’ve used the same type of approach to not only identify skill fit but also to identify gaps in skills for the purpose of creating on-demand skill training.</p>
+
+<h2 id="so-if-i-agree-with-the-approach-why-the-hesitance">So, if I agree with the approach … why the hesitance?</h2>
+
+<blockquote>
+<p>I hesitate to fully embrace the Google Job model because if they are working from O*Net - O*Net uses a bridge to connect occupations in their ontology with Military Occupations in a separate database. Furthermore, the Department of Defense neither provides, nor categorizes military skills using the same skill database as the Department of Labor.</p>
+</blockquote>
+
+<p>Case in point - there is no standardization of skill training for the military medic across all branches of service. The National Council of State Boards of Nursing (NCSBN) recently revised their analysis of military medic to RN training equivalence and it doesn’t take you long to discover two obvious points: 1. There’s no easy way for a medic to translate their skills, and 2. There’s no way a single job description will ever list all the skill requirements that actually go into an occupation.  The O*Net skill translator … and for the most part every MOS to Civilian translator does a really poor job of translation, and in fact biases against military training … that is to say, if you review equivalence and job recommendation across military to civilian job recommendations you find that military occupations are ALWAYS correlated with more junior civilian occupations. Military transitioners are chronically underemployed upon exit … they are underemployed because the very fabric upon which civilian occupations rest is systematically biased against the skills they gained during their military service.</p>
+
+<p>I had been hoping for better when Google announced their product in June … with this next phase and more information, I am no longer hopeful for the viability of Google’s platform or approach as an answer for military in transition. I will, however, keep you read in on what we discover if we are invited into the beta program … in which case we will be building in a better translational model.</p>
+
+<p>Of course … skill set matching without testing and evidence … no matter how good the natural language processing is … how valuable is that really?</p>
+
+<h2 id="are-there-alternatives-i-believe-so">Are there alternatives?  I believe so.</h2>
+
+<p>If you recall, I recently announced the development of our Military job AI project titled “Gunny Jobs.” Part of this project combines with our veteran survey, that captures information about prior service, education level, demographics, location and job … and whether or not they like who they are working for and what they are doing.  There are adjustments to be made for sure, and we need more data as our model is still only inclusive of a 722 x 38 x 83 model (MOS, Major, Occupation). I believe that until such a time as an unbiased model is available, the best approach is to identify employers that do the best job in selection, hiring, promoting and engaging military veterans in jobs they can succeed in and enjoy. By identifying these critical pathways, we can provide useful guidance to transitioning military.</p>
+
+<p>What do we need? More data =) If you are a veteran I encourage you to <strong>#JointheRanks</strong>  - we’ll be distributing survey links … if you’re currently employed, ask your HR officer to contact Redcell to request our proprietary Employee Survey - or for schools, our Student Survey. All the data from these surveys is being used to feed our AI model … to help build a job search tool that recognizes the real value of military service.</p>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+<section class="tags">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+<a class="button tags__tag"
+   href="https://redcell.ai/tags/hiring-selection">
+  hiring selection
+</a>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+  </article>
+
+  
+  <section class="section--bordered share">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="subtle">
+  Share this post &#128522; &#128640;
+</p>
+<div class="share-buttons">
+
+  
+  <a
+    href="http://twitter.com/share?url=https://redcell.ai/blog/google-job-api-bias/&text=Eliminating%20Bias%20and%20Google%27s%20Jobs%20API&via="
+    onclick="window.open(this.href, 'twitter-share', 'width=800,height=600');return false;"
+    title="Share on Twitter"
+    class="button--share button twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+
+  
+  <a href="https://plus.google.com/share?url=https://redcell.ai/blog/google-job-api-bias/"
+     onclick="window.open(this.href, 'google-plus-share');return false;"
+     title="Share on Google+"
+     class="button--share button google-plus">
+    <i class="fa fa-google-plus"></i>
+  </a>
+
+  
+  <a href="http://reddit.com/submit?url=https://redcell.ai/blog/google-job-api-bias/&title=Eliminating%20Bias%20and%20Google%27s%20Jobs%20API"
+     onclick="window.open(this.href, 'reddit-share', 'width=900,height=600');return false;"
+     title="Post to Reddit"
+     class="button--share button reddit">
+    <i class="fa fa-reddit"></i>
+  </a>
+
+  
+  <a href="http://www.facebook.com/sharer/sharer.php?u=https://redcell.ai/blog/google-job-api-bias/"
+     onclick="window.open(this.href, 'facebook-share', 'width=800,height=600');return false;"
+     title="Share on Facebook"
+     class="button--share button facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+
+  
+  <a
+    href="http://www.stumbleupon.com/submit?url=https://redcell.ai/blog/google-job-api-bias/&title=Eliminating%20Bias%20and%20Google%27s%20Jobs%20API"
+    onclick="window.open(this.href, 'stumbleupon-share', 'width=800,height=600');return false;"
+    title="Post to StumbleUpon"
+    class="button--share button stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+  </a>
+
+  
+  <a
+    href="http://www.linkedin.com/shareArticle?url=https://redcell.ai/blog/google-job-api-bias/&title=Eliminating%20Bias%20and%20Google%27s%20Jobs%20API"
+    onclick="window.open(this.href, 'linkedin-share', 'width=800,height=600');return false;"
+    title="Share on LinkedIn"
+    class="button--share button linkedin">
+    <i class="fa fa-linkedin"></i>
+  </a>
+
+  
+  <a href="mailto:?subject=Eliminating%20Bias%20and%20Google%27s%20Jobs%20API"
+     target="_blank"
+     title="Share via email"
+     onclick="window.open(this.href, 'email-share', 'width=800,height=600');return false;"
+     class="button--share button email">
+    <i class="fa fa-envelope"></i>
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="comments">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          
+          <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "redcell-talent" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="dark no-margin padding-bottom padding-top">
+    <div class="container">
+      <div class="row center">
+        <div class="col-8">
+          <p class="no-margin" style="margin: 0.6rem;">
+            Ready to speed up your API testing workflow?
+          </p>
+        </div>
+        <div class="col-4">
+          <a href="https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d" class="button __download-link">Download</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  
+<section class="no-margin padding-bottom-lg padding-top-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 center">
+        <h2 class="text-xl">Join our growing list of satisfied clients</h2>
+        <p>Discover the transformative power of our Augmented Talent Solutions.</p>
+      </div>
+    </div>
+    
+  </div>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4273274.js"></script>
+
+</section>
+
+  <section>
+    <p class="footer__menu">
+      
+
+      
+
+      
+
+      
+      
+      
+      
+      
+      <a href="/support/">Contact</a>
+      
+      <a href="/transparency/">Transparency</a>
+      
+      <a href="/privacy/">Privacy</a>
+      
+      <a href="/terms/">Terms</a>
+      
+      
+    </p>
+    <p class="text-sm">
+      &copy; 2018
+      <a href="https://redcell.ai" target="_blank">
+        Redcell, Pittsburgh, PA
+      </a>
+    </p>
+  </section>
+</footer>
+
+
+
+<script async src="https://redcell.ai/javascript/build/main.min.js"></script>
+
+
+
+</body>
+</html>

@@ -41,6 +41,7 @@
     "webpack": "^3.5.1"
   },
   "dependencies": {
+    "chart.js": "^2.7.1",
     "hkdf": "0.0.2",
     "moment": "^2.19.3",
     "node-forge": "^0.7.1",

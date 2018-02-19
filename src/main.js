@@ -1,5 +1,6 @@
 import * as session from './session';
 
+
 (function () {
   // Handle download links
   const els = document.querySelectorAll('.__download-link');
@@ -94,6 +95,7 @@ if ('serviceWorker' in navigator) {
     console.log('Service worker registration failed, error:', error);
   });
 }
+
 
 // !function (e, o, n) {
 //   window.HSCW = o;
