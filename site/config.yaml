@@ -1,5 +1,5 @@
 ---
-baseurl: "https://redcell.ai/"
+baseurl: "https://redcelltalent.com/"
 languageCode: "en-us"
 copyright: "Redcell, Pittsburgh, PA"
 title: "Redcell Talent Accelerator"
@@ -68,7 +68,7 @@ taxonomies:
   category: "categories"
   series: "series"
 params:
-  copyrightURL: "https://redcell.ai"
+  copyrightURL: "https://redcelltalent.com"
   repo: "git@gitlab.com:tripleorange/redcell.git"
   docsCategories:
     - "welcome"
@@ -78,7 +78,7 @@ params:
     - "main.css"
   scripts:
     - "build/main.min.js"
-  email: "contact@redcell.ai"
+  email: "contact@redcelltalent.com"
   pageNotFoundTitle: "Sorry, that page doesn't exist"
   # shortName: ""
   bio: "Talent Accelerator"

@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git remote add origin https://github.com/devPadre/redcell-master.git"
+    "url": "https://github.com/devPadre/redcell-master.git"
   },
   "homepage": "https://redcelltalent.com",
   "devDependencies": {
