@@ -1,9 +1,12 @@
 ---
-date: 2018-03-20
+date: 2018-03-21
 title: Blockchain is about to transform the talent market and HR .
 slug: talent-blockchain
 tags: ["blockchain"]
 ---
+<p align="center">
+  <img src="https://res.cloudinary.com/victorydev/image/upload/v1521645607/blockchain_img_vcqu2h.jpg" width=100% title="Github Logo">
+</p>
 
 ## The talent blockchain is real and coming soon
 
