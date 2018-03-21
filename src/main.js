@@ -85,67 +85,80 @@ import * as session from './session';
   }
 })();
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js')
-  .then(function(registration) {
-    console.log('Registration successful, scope is:', registration.scope);
-  })
-  .catch(function(error) {
-    console.log('Service worker registration failed, error:', error);
+function showRefreshUI(registration) {
+  // TODO: Display a toast or refresh UI.
+
+  // This demo creates and injects a button.
+
+  var button = document.createElement('button');
+  button.style.position = 'absolute';
+  button.style.bottom = '24px';
+  button.style.left = '24px';
+  button.textContent = 'This site has updated. Please click here to see changes.';
+
+  button.addEventListener('click', function() {
+    if (!registration.waiting) {
+      // Just to ensure registration.waiting is available before
+      // calling postMessage()
+      return;
+    }
+
+    button.disabled = true;
+
+    registration.waiting.postMessage('skipWaiting');
   });
+
+  document.body.appendChild(button);
+};
+
+function onNewServiceWorker(registration, callback) {
+  if (registration.waiting) {
+    // SW is waiting to activate. Can occur if multiple clients open and
+    // one of the clients is refreshed.
+    return callback();
+  }
+
+  function listenInstalledStateChange() {
+    registration.installing.addEventListener('statechange', function(event) {
+      if (event.target.state === 'installed') {
+        // A new service worker is available, inform the user
+        callback();
+      }
+    });
+  };
+
+  if (registration.installing) {
+    return listenInstalledStateChange();
+  }
+
+  // We are currently controlled so a new SW may be found...
+  // Add a listener in case a new SW is found,
+  registration.addEventListener('updatefound', listenInstalledStateChange);
 }
 
-// !function (e, o, n) {
-//   window.HSCW = o;
-//   window.HS = n;
-//   n.beacon = n.beacon || {};
-//   const t = n.beacon;
-//   t.userConfig = {};
-//   t.readyQueue = [];
-//   t.config = function (e) {
-//     this.userConfig = e
-//   };
-//   t.ready = function (e) {
-//     this.readyQueue.push(e)
-//   };
-//   o.config = {
-//     docs: {enabled: !0, baseUrl: "//redcell.ai/"},
-//     contact: {enabled: !0, formId: "a9f6c8aa-b1dd-11e7-b466-0ec85169275a"}
-//   };
-//   const r = e.getElementsByTagName("script")[0], c = e.createElement("script");
-//   c.type = "text/javascript";
-//   c.async = !0;
-//   c.src = "https://djtflbt20bdde.cloudfront.net/";
-//   r.parentNode.insertBefore(c, r);
-// }(document, window.HSCW || {}, window.HS || {});
+window.addEventListener('load', function() {
+  navigator.serviceWorker.register('/sw.js')
+  .then(function (registration) {
+      // Track updates to the Service Worker.
+    if (!navigator.serviceWorker.controller) {
+      // The window client isn't currently controlled so it's a new service
+      // worker that will activate immediately
+      return;
+    }
 
-// HS.beacon.config({
-//   color: '#6e60cc',
-//   icon: 'search',
-//   attachment: true,
-//   poweredBy: false,
-//   showSubject: true,
-//   showContactFields: true,
-//   translation: {
-//     searchLabel: 'Search the documentation'
-//   },
-//   topics: [
-//     {val: 'app', label: 'Desktop App'},
-//     {val: 'bug report', label: 'Bug Report'},
-//     {val: 'account', label: 'Plus or Teams Account'},
-//     {val: 'question', label: 'Question'},
-//     {val: 'plugin', label: 'Plugin Development'},
-//     {val: 'other', label: 'Other'},
-//   ]
-// });
+    // When the user asks to refresh the UI, we'll need to reload the window
+    var preventDevToolsReloadLoop;
+    navigator.serviceWorker.addEventListener('controllerchange', function(event) {
+      // Ensure refresh is only called once.
+      // This works around a bug in "force update on reload".
+      if (preventDevToolsReloadLoop) return;
+      preventDevToolsReloadLoop = true;
+      console.log('Controller loaded');
+      window.location.reload();
+    });
 
-// HS.beacon.ready(async () => {
-//   const data = await session.whoami();
-//   HS.beacon.identify({
-//     name: `${data.firstName} ${data.lastName || ''}`.trim(),
-//     email: data.email,
-//     // Custom
-//     'Account ID': data.accountId,
-//     'Plan Name': data.planName
-//   });
-// });
+    onNewServiceWorker(registration, function() {
+      showRefreshUI(registration);
+    });
+  });
+});

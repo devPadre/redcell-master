@@ -1,10 +1,18 @@
-
+# Folders
 .idea
 _speedpack
 _hugo
+.vscode
+
 
 node_modules
 .npm-debug.log
+
+.firebaserc
+firebase.json
+
+site/components/teams
+
 
 .DS_Store
 site/static/javascript/build/*

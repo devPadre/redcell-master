@@ -33,5 +33,15 @@
     }
   })();
 </script>
-
 <script src="https://embed.small.chat/T94P46AF5G95V232UF.js" async></script>
+
+<script>
+  // Check that service workers are registered
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+  </script>
+

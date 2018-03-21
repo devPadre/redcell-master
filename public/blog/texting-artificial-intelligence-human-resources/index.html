@@ -24,7 +24,7 @@
         "@context": "http://schema.org",
         "@type": "WebSite",
         "name": "Redcell Talent Accelerator",
-        "url": "https://redcell.ai/"
+        "url": "https://redcelltalent.com/"
     }
 
 
@@ -33,8 +33,8 @@
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "url": "https://redcell.ai/",
-      "logo": "https://redcell.ai/images/icon.png",
+      "url": "https://redcelltalent.com/",
+      "logo": "https://redcelltalent.com/images/icon.png",
       "name": "Redcell Talent Accelerator",
       "sameAs": [
         "https://twitter.com/",
@@ -54,14 +54,14 @@
   <meta name="twitter:description"
         content="Texting has paved the way for artificial intelligence, and HR should get on board. Texting isn’t new by any stretch of the imagination. As a communication medium that has been around for more than 20 years, it has just begun to hit its stride in the past few years. Widespread, generally free, real-time and with incredible reach, texting and messaging has become a central component if not a driving force in human interaction."/>
   <meta name="twitter:image"
-        content="https://redcell.ai/images/twitter-card-icon.png"/>
+        content="https://redcelltalent.com/images/twitter-card-icon.png"/>
   
-  <meta property="og:url" content="https://redcell.ai/blog/texting-artificial-intelligence-human-resources/"/>
+  <meta property="og:url" content="https://redcelltalent.com/blog/texting-artificial-intelligence-human-resources/"/>
   <meta property="og:type" content="article"/>
   <meta property="og:title" content="Texting has paved the way to AI in HR"/>
   <meta property="og:description"
         content="Texting has paved the way for artificial intelligence, and HR should get on board. Texting isn’t new by any stretch of the imagination. As a communication medium that has been around for more than 20 years, it has just begun to hit its stride in the past few years. Widespread, generally free, real-time and with incredible reach, texting and messaging has become a central component if not a driving force in human interaction."/>
-  <meta property="og:image" content="https://redcell.ai/images/twitter-card-icon.png"/>
+  <meta property="og:image" content="https://redcelltalent.com/images/twitter-card-icon.png"/>
   
   
 
@@ -100,35 +100,47 @@
     }
   })();
 </script>
-
 <script src="https://embed.small.chat/T94P46AF5G95V232UF.js" async></script>
 
+<script>
+  
+  if ('serviceWorker' in navigator) {
+    
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+  </script>
+
+
   
 
   
   
 
   
-  <link rel="apple-touch-icon" sizes="180x180" href="https://redcell.ai/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://redcell.ai/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://redcell.ai/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="https://redcell.ai/images/favicon/manifest.json">
-  <link rel="mask-icon" href="https://redcell.ai/images/favicon/safari-pinned-tab.svg" color="#584dbc">
-  <link rel="shortcut icon" href="https://redcell.ai/images/favicon/favicon.ico">
-  <meta name="msapplication-config" content="https://redcell.ai/images/favicon/browserconfig.xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://redcelltalent.com/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://redcelltalent.com/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://redcelltalent.com/images/favicon/favicon-16x16.png">
+  
+  <link rel="mask-icon" href="https://redcelltalent.com/images/favicon/safari-pinned-tab.svg" color="#584dbc">
+  <link rel="shortcut icon" href="https://redcelltalent.com/images/favicon/favicon.ico">
+  <meta name="msapplication-config" content="https://redcelltalent.com/images/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
   
-<link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="https://redcelltalent.com/manifest.json">
 
   
-  <link rel="stylesheet" href="https://redcell.ai/css/simple-grid.min.css">
-  <link rel="stylesheet" href="https://redcell.ai/css/base.css">
+  <link rel="stylesheet" href="https://redcelltalent.com/css/simple-grid.min.css">
+  <link rel="stylesheet" href="https://redcelltalent.com/css/base.css">
   
-  <link rel="stylesheet" href="https://redcell.ai/css/main.css">
+  <link rel="stylesheet" href="https://redcelltalent.com/css/main.css">
   
+
 </head>
 
+<script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js></script>
 <body class="template-blog">
 
 
@@ -136,6 +148,7 @@
 
 
 <div>
+      
 <nav class="navbar navbar-fixed-top navbar-expand-lg">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -143,10 +156,10 @@
       <div class="row">
         <div class="col-12 navbar__container navbar-expand-lg">
             
-        <a href="https://redcell.ai/" class="navbar__icon">
+        <a href="https://redcelltalent.com/" class="navbar__icon">
           <img src="/images/icon-small.png" alt="Redcell icon image">
         </a>
-        <a href="https://redcell.ai/" class="navbar__title">
+        <a href="https://redcelltalent.com/" class="navbar__title">
           <h1></h1>
         </a>
 
@@ -154,9 +167,21 @@
 
         <ul class="navbar__items">
           
+          <li data-menu-item="connect">
+            
+            <a href="/support/">Connect</a>
+            
+          </li>
+          
           <li data-menu-item="blog">
             
             <a href="/blog/">Blog</a>
+            
+          </li>
+          
+          <li data-menu-item="blockchain">
+            
+            <a href="http://blockchain.redcell.ai">Blockchain Demo</a>
             
           </li>
           
@@ -175,7 +200,7 @@
     </div>
   </div>
 </nav>
-
+</div>
 <script>
   if (localStorage && localStorage.currentSessionId) {
     document.body.setAttribute('data-logged-in', 'yes');
@@ -277,7 +302,7 @@
       <div class="col-12">
         
 <a class="button tags__tag"
-   href="https://redcell.ai/tags/artificial-intelligence">
+   href="https://redcelltalent.com/tags/artificial-intelligence">
   artificial intelligence
 </a>
 
@@ -304,7 +329,7 @@
 
   
   <a
-    href="http://twitter.com/share?url=https://redcell.ai/blog/texting-artificial-intelligence-human-resources/&text=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR&via="
+    href="http://twitter.com/share?url=https://redcelltalent.com/blog/texting-artificial-intelligence-human-resources/&text=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR&via="
     onclick="window.open(this.href, 'twitter-share', 'width=800,height=600');return false;"
     title="Share on Twitter"
     class="button--share button twitter">
@@ -312,7 +337,7 @@
   </a>
 
   
-  <a href="https://plus.google.com/share?url=https://redcell.ai/blog/texting-artificial-intelligence-human-resources/"
+  <a href="https://plus.google.com/share?url=https://redcelltalent.com/blog/texting-artificial-intelligence-human-resources/"
      onclick="window.open(this.href, 'google-plus-share');return false;"
      title="Share on Google+"
      class="button--share button google-plus">
@@ -320,7 +345,7 @@
   </a>
 
   
-  <a href="http://reddit.com/submit?url=https://redcell.ai/blog/texting-artificial-intelligence-human-resources/&title=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR"
+  <a href="http://reddit.com/submit?url=https://redcelltalent.com/blog/texting-artificial-intelligence-human-resources/&title=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR"
      onclick="window.open(this.href, 'reddit-share', 'width=900,height=600');return false;"
      title="Post to Reddit"
      class="button--share button reddit">
@@ -328,7 +353,7 @@
   </a>
 
   
-  <a href="http://www.facebook.com/sharer/sharer.php?u=https://redcell.ai/blog/texting-artificial-intelligence-human-resources/"
+  <a href="http://www.facebook.com/sharer/sharer.php?u=https://redcelltalent.com/blog/texting-artificial-intelligence-human-resources/"
      onclick="window.open(this.href, 'facebook-share', 'width=800,height=600');return false;"
      title="Share on Facebook"
      class="button--share button facebook">
@@ -337,7 +362,7 @@
 
   
   <a
-    href="http://www.stumbleupon.com/submit?url=https://redcell.ai/blog/texting-artificial-intelligence-human-resources/&title=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR"
+    href="http://www.stumbleupon.com/submit?url=https://redcelltalent.com/blog/texting-artificial-intelligence-human-resources/&title=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR"
     onclick="window.open(this.href, 'stumbleupon-share', 'width=800,height=600');return false;"
     title="Post to StumbleUpon"
     class="button--share button stumbleupon">
@@ -346,7 +371,7 @@
 
   
   <a
-    href="http://www.linkedin.com/shareArticle?url=https://redcell.ai/blog/texting-artificial-intelligence-human-resources/&title=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR"
+    href="http://www.linkedin.com/shareArticle?url=https://redcelltalent.com/blog/texting-artificial-intelligence-human-resources/&title=Texting%20has%20paved%20the%20way%20to%20AI%20in%20HR"
     onclick="window.open(this.href, 'linkedin-share', 'width=800,height=600');return false;"
     title="Share on LinkedIn"
     class="button--share button linkedin">
@@ -432,7 +457,7 @@
     
   </div>
 
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4273274.js"></script>
+
 
 </section>
 
@@ -449,9 +474,9 @@
       
       
       
-      <a href="/support/">Contact</a>
+      <a href="http://blockchain.redcell.ai">Blockchain Demo</a>
       
-      <a href="/transparency/">Transparency</a>
+      <a href="/support/">Contact</a>
       
       <a href="/privacy/">Privacy</a>
       
@@ -461,7 +486,7 @@
     </p>
     <p class="text-sm">
       &copy; 2018
-      <a href="https://redcell.ai" target="_blank">
+      <a href="https://redcelltalent.com" target="_blank">
         Redcell, Pittsburgh, PA
       </a>
     </p>
@@ -470,7 +495,7 @@
 
 
 
-<script async src="https://redcell.ai/javascript/build/main.min.js"></script>
+<script async src="https://redcelltalent.com/javascript/build/main.min.js"></script>
 
 
 
