@@ -9,7 +9,8 @@ type: skinny
 
 Click this link to  [View our Brochure](https://indd.adobe.com/view/616532ee-70ec-40d7-9f31-208274561e1d).
 
-<!-- <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/616532ee-70ec-40d7-9f31-208274561e1d?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allowfullscreen=""></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BSVEkDj4_Zk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 ## Slack Group
 

@@ -54,7 +54,7 @@ export default {
         use: ['babel-loader'],
         exclude: /(node_modules|bower_components)/
       }
-    ]
+    ],
   },
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin(),
@@ -65,3 +65,5 @@ export default {
     ...extraPlugins
   ]
 };
+
+

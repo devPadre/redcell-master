@@ -72,12 +72,12 @@
     <div class="container center">
       <div class="row">
         <div class="col-12">
-          <h2 class="text-xxl">Get more done, faster</h2>
+          <h2 class="text-xxl">Quit wasting money on legacy recruiting.</h2>
           <p class="text-lg" style="max-width:35rem;margin:auto">
-            Redcell accelerates your <i>talent</i> operations.
+            It's time to experience real <i>ROI</i> in your talent operations.
             <br>
             <br>
-            {{ partial "contact-button" }}
+            {{ partial "calculator-button" }}
           </p>
         </div>
       </div>
@@ -128,15 +128,14 @@
     <div class="container center">
       <div class="row">
         <div class="col-12">
-          <h2>Programmatic A.I. Sourcing is for <i>everyone</i> &#10084;</h2>
+          <h2>The Blockchain Talent <i>Exchange</i> is launching soon &#10084;</h2>
           <p style="max-width:35rem;margin:auto" class="padding-bottom">
-            Our collaborative, open source, and open knowledge approach to
-            <a href="https://github.com/redcell/web">machine learning</a>, and
-            cross-platform programmatic technical sourcing – make <i>Redcell</i> the perfect companion for both enterprises and partners.
+            Our collaborative, open source, and open knowledge approach to machine learning, and
+            cross-platform programmatic sourcing has lead to our newest innovation: the <a href="http://blockchain.redcell.ai">Blockchain</a> powered Talent Exchange. 
           </p>
-          {{ partial "contact-button" }}
+          {{ partial "beta-download-button" }}
           &nbsp;
-          <a href="/partners" class="button button--no-outline">Become a Partner</a>
+          <a href="/support" class="button button--no-outline">Contact Us</a>
         </div>
       </div>
     </div>
@@ -177,7 +176,7 @@
             <li>A/B Testing and Analysis</li>
             <li>Social Campaign <code style="color:#333">Optimization</code></li>
             <li>HR Data security</li>
-            <li>Keyboard shortcuts</li>
+            <li>Process Mapping</li>
             <li>Technical RPO</li>
             <li>Responsive interface</li>
             <li>Compliance Reporting <code style="color:#333">Automation</code></li>
@@ -200,21 +199,15 @@
 {{ partial "footer" . }}
 {{ partial "js" . }}
 
-<script>
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('/sw.js', { scope: '/' })
-            .then(function(registration) {
-                console.log('Service Worker Registered');
-            });
-
-        navigator.serviceWorker
-            .ready
-            .then(function(registration) {
-                console.log('Service Worker Ready');
-            });
-    }
-</script>
+    <script>
+      // Check that service workers are registered
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+      </script>
 
 </body>
 </html>

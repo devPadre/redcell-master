@@ -108,6 +108,19 @@ Customize
     }
   })();
 </script>
+<script src="https://embed.small.chat/T94P46AF5G95V232UF.js" async></script>
+
+<script>
+  
+  if ('serviceWorker' in navigator) {
+    
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+  </script>
+
+
   
 
   
@@ -117,14 +130,14 @@ Customize
   <link rel="apple-touch-icon" sizes="180x180" href="https://redcell.ai/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://redcell.ai/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://redcell.ai/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="https://redcell.ai/images/favicon/manifest.json">
+  
   <link rel="mask-icon" href="https://redcell.ai/images/favicon/safari-pinned-tab.svg" color="#584dbc">
   <link rel="shortcut icon" href="https://redcell.ai/images/favicon/favicon.ico">
   <meta name="msapplication-config" content="https://redcell.ai/images/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
   
-<link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="https://redcell.ai/manifest.json">
 
   
   <link rel="stylesheet" href="https://redcell.ai/css/simple-grid.min.css">
@@ -141,6 +154,7 @@ Customize
 
 
 <div>
+      
 <nav class="navbar navbar-fixed-top navbar-expand-lg">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -159,9 +173,21 @@ Customize
 
         <ul class="navbar__items">
           
+          <li data-menu-item="connect">
+            
+            <a href="/support/">Connect</a>
+            
+          </li>
+          
           <li data-menu-item="blog">
             
             <a href="/blog/">Blog</a>
+            
+          </li>
+          
+          <li data-menu-item="blockchain">
+            
+            <a href="http://blockchain.redcell.ai">Blockchain Demo</a>
             
           </li>
           
@@ -180,7 +206,7 @@ Customize
     </div>
   </div>
 </nav>
-
+</div>
 <script>
   if (localStorage && localStorage.currentSessionId) {
     document.body.setAttribute('data-logged-in', 'yes');
@@ -309,7 +335,7 @@ Customize
     
   </div>
 
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4273274.js"></script>
+
 
 </section>
 
@@ -326,9 +352,9 @@ Customize
       
       
       
-      <a href="/support/">Contact</a>
+      <a href="http://blockchain.redcell.ai">Blockchain Demo</a>
       
-      <a href="/transparency/">Transparency</a>
+      <a href="/support/">Contact</a>
       
       <a href="/privacy/">Privacy</a>
       

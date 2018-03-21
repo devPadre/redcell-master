@@ -143,8 +143,8 @@ class SignUp extends Component {
           <p className="notice info small">
             Keep your password safe because it cannot be recovered.
             <br/>
-            <a href="https://insomnia.rest/documentation/plus/">Read More</a> about
-            how your password is used to encrypt your data.
+            <a href="https://redcell.ai/privacy/">Read More</a> about
+            our privacy policies.
           </p>
         </div>
         <div className="form-control">
@@ -175,7 +175,7 @@ class SignUp extends Component {
                    onChange={this._handleUpdateInput}/>
             I agree to the
             {" "}
-            <a href="https://insomnia.rest/terms/" target="_blank">Terms</a>
+            <a href="https://redcell.ai/terms/" target="_blank">Terms</a>
           </label>
         </div>
         {error ? <small className="form-control error">** {error}</small> : null}

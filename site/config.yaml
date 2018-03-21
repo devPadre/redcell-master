@@ -11,10 +11,10 @@ permalinks:
   blog: /blog/:slug
 menu:
   main:
-    # - Name: "Docs"
-    #   Identifier: "docs"
-    #   URL: "https://redcell.ai"
-    #   Weight: 1
+    - Name: "Connect"
+      Identifier: "connect"
+      URL: "/support/"
+      Weight: 1
     # - Name: "Pricing"
     #   Identifier: "pricing"
     #   URL: "/pricing/"
@@ -22,12 +22,12 @@ menu:
     - Name: "Blog"
       Identifier: "blog"
       URL: "/blog/"
-      Weight: 3
-    # - Name: "GitHub"
-    #   Identifier: "github"
-    #   Pre: "button"
-    #   URL: "https://github.com/getinsomnia/insomnia"
-    #   Weight: 4
+      Weight: 2
+    - Name: "Blockchain Demo"
+      Identifier: "blockchain"
+      Pre: "button"
+      URL: "http://blockchain.redcell.ai"
+      Weight: 4
     # - Name: "Account"
     #   Identifier: "account"
     #   Pre: "button"
@@ -43,18 +43,15 @@ menu:
       URL: /support/
       Weight: 100
   footer:
+    - Name: "Blockchain Demo"
+      Identifier: "blockchain"
+      Pre: "button"
+      URL: "http://blockchain.redcell.ai"
+      Weight: 3
     - Name: Contact
       Identifier: support
       URL: /support/
-      weight: 1
-    - Name: Transparency
-      Identifier: transparency
-      URL: /transparency/
-      weight: 6
-    # - Name: Changelog
-    #   Identifier: changelog
-    #   URL: /changelog/
-    #   weight: 7
+      weight: 4
     - Name: Terms
       Identifier: terms
       URL: /terms/
