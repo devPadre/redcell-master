@@ -8,7 +8,7 @@ deploy.
 
 Bootstrapped with Insomnia.io
 
-Fully converted to a PWA! Lighthouse 100
+Fully converted to a PWA! Lighthouse=100
 
 ```shell
 # run watch server (production)
