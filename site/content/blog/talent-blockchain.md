@@ -52,7 +52,7 @@ Whenever a new transaction occurs, the blockchain is authenticated across this n
 
 The blockchain creates trust because a copy of the chain showing every transaction is held by the entire network. If someone tries to cheat the system, they can be identified. The data in a block cannot be changed or deleted only added to and if anyone were to attempt to make a false entry, the other nodes would not allow it and the false data would be rejected.
 
-A personal ID from a blockchain is totally secure and can be used in lots of ways from signing legal documents to verifying employment or experience.
+Business-focused private blockchain networks provide for a high degree of security, as well as customized security access rules that can be controlled at the individual or entity level and can be used in many ways from signing legal documents to verifying employment, to establishing employment contracts or validating prior experience.
 
 ## Numerous other benefits of blockchain for recruitment and HR
 A foundational talent blockchain could provide numerous additional benefits ... trusted data sets would lead to improved AI matching opportunities. Smart Contracts, which are a fundamental part of the blockchain infrastructure could automate and trigger a number of actions - such as HRIS enrollment, payment start and end dates, establish new contract-based employment, eliminate repetitive processes and increase speed. Automated compliance and transparency is another perk for modern firms and government regulators.

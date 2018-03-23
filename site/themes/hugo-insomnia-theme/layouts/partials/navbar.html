@@ -1,11 +1,9 @@
 <div>
       
-<nav class="navbar navbar-fixed-top navbar-expand-lg">
-  <div class="container-fluid">
-    <div class="navbar-header">
+<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light" role="navigation">
+  <div class="navbar__container">
 
-      <div class="row">
-        <div class="col-12 navbar__container navbar-expand-lg">
+        <!-- <div class="navbar__container navbar-expand-lg"> -->
             
         <a href="{{ .Site.BaseURL }}" class="navbar__icon">
           <img src="/images/icon-small.png" alt="Redcell icon image">
@@ -16,26 +14,26 @@
 
         {{ if .Site.Menus.main }}
 
-        <ul class="navbar__items">
-          {{ range .Site.Menus.main }}
-          <li data-menu-item="{{ .Identifier }}">
-            {{ if eq .Identifier "signup" }}
-            <a href="{{ .URL }}" class="show-logged-out">{{ .Name }}</a>
-            {{ else if eq .Identifier "account" }}
-            <a href="{{ .URL }}" class="show-logged-in">{{ .Name }}</a>
-            {{ else if eq .Identifier "download" }}
-            <div>
-              <a href="{{ .URL }}" class="button">{{ .Name }}</a>
-            </div>
-            {{ else }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
+          <ul class="navbar__items">
+            {{ range .Site.Menus.main }}
+            <li data-menu-item="{{ .Identifier }}">
+              {{ if eq .Identifier "signup" }}
+              <a href="{{ .URL }}" class="show-logged-out">{{ .Name }}</a>
+              {{ else if eq .Identifier "account" }}
+              <a href="{{ .URL }}" class="show-logged-in">{{ .Name }}</a>
+              {{ else if eq .Identifier "download" }}
+              <div>
+                <a href="{{ .URL }}" class="button">{{ .Name }}</a>
+              </div>
+              {{ else }}
+              <a href="{{ .URL }}">{{ .Name }}</a>
+              {{ end }}
+            </li>
             {{ end }}
-          </li>
-          {{ end }}
-        </ul>
+          </ul>
       </div>
         {{ end }}
-      </div>
+
     </div>
   </div>
 </nav>

@@ -39,14 +39,15 @@ img.jumbotron__icon {
 }
 
 .jumbotron h1 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     margin: 0;
 }
 
 .jumbotron h2 {
     margin: 0;
     padding-top: 1rem;
-    font-size: 1.7rem;
+    font-size: 2.2rem;
+    font-weight: 300;
     color: #eee;
 }
 
@@ -601,3 +602,72 @@ body[data-logged-in="no"] .show-logged-out {
         margin: auto;
     }
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#animated_footer {
+    color:#999;
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    padding-top:200px;  
+    position:fixed;
+    width:100%;
+    bottom:45%;
+    display:block;
+  }
+
+#flip {
+  height:50px;
+  overflow:hidden;
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+  color:#999;
+  text-transform: uppercase;
+  font-size:28px;
+  font-weight:bold;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#ff8970;
+}
+#flip div:first-child div {
+  background:#70e6ff;
+}
+#flip div:last-child div {
+  background:#66ffb3;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
