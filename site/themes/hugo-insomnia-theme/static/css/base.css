@@ -6,6 +6,7 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+    padding-top: 20px;
 }
 
 main {
@@ -789,7 +790,7 @@ body.floating-navbar .navbar a:hover {
     flex-direction: row;
     padding-left: 15px;
     padding-right: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 9999;
     background: white;
     width: 100%;
